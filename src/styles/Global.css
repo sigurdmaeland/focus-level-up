@@ -1,0 +1,304 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.page {
+  min-height: 100vh;
+  background: 
+    /* Vertikale gradient linjer */
+    linear-gradient(90deg, transparent 0%, rgba(0, 188, 212, 0.03) 2%, transparent 4%),
+    linear-gradient(90deg, transparent 15%, rgba(0, 230, 178, 0.02) 17%, transparent 19%),
+    linear-gradient(90deg, transparent 30%, rgba(0, 188, 212, 0.04) 32%, transparent 34%),
+    linear-gradient(90deg, transparent 45%, rgba(0, 230, 178, 0.03) 47%, transparent 49%),
+    linear-gradient(90deg, transparent 60%, rgba(0, 188, 212, 0.02) 62%, transparent 64%),
+    linear-gradient(90deg, transparent 75%, rgba(0, 230, 178, 0.04) 77%, transparent 79%),
+    linear-gradient(90deg, transparent 90%, rgba(0, 188, 212, 0.03) 92%, transparent 94%),
+    
+    /* Diagonal mønstre for ekstra dybde */
+    linear-gradient(135deg, transparent 0%, rgba(0, 188, 212, 0.01) 25%, transparent 50%, rgba(0, 230, 178, 0.01) 75%, transparent 100%),
+    
+    /* Radial gradient for depth */
+    radial-gradient(circle at 25% 25%, rgba(0, 188, 212, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(0, 230, 178, 0.02) 0%, transparent 50%),
+    
+    /* Base bakgrunn */
+    #0a0a0a;
+    
+  background-size: 
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    100% 100%,
+    200% 200%,
+    800px 800px,
+    600px 600px,
+    100% 100%;
+    
+  padding: 0;
+  padding-top: calc(130px + 2rem);
+  padding-bottom: 0;
+  position: relative;
+}
+
+/* Ekstra overlay for mer dybde */
+.page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    /* Vertikale streker med mer intensitet */
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 48px,
+      rgba(0, 188, 212, 0.08) 50px,
+      rgba(0, 188, 212, 0.08) 52px,
+      transparent 54px,
+      transparent 98px,
+      rgba(0, 230, 178, 0.06) 100px,
+      rgba(0, 230, 178, 0.06) 102px,
+      transparent 104px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Sikre at innholdet er over overlay */
+.page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0 6rem;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #00bcd4 0%, #00e6b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #cccccc;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #00bcd4 0%, #00e6b2 100%);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 188, 212, 0.4);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00e6b2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background: #111111;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #333;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #00bcd4;
+}
+
+.card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00e6b2;
+}
+
+.card p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stat .number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00bcd4;
+  display: block;
+}
+
+.stat .label {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: calc(80px + 2rem);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Mobile Hero Adjustments */
+  .hero-modern {
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .trust-indicators {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  /* Mobile Services */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card.featured {
+    grid-column: 1;
+  }
+
+  /* Mobile Process */
+  .process-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+    margin: 1rem 0;
+  }
+
+  /* Mobile Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Mobile Stats */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

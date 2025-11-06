@@ -279,11 +279,11 @@
 @keyframes slideDown {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(-20px);
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -291,7 +291,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem 1rem;
+  padding: 1.5rem 2rem 0.5rem;
 }
 
 .mobileLogo {
@@ -303,7 +303,7 @@
 
 .mobileNavigation {
   flex: 1;
-  padding: 8rem 0 1rem 0;
+  padding: 7rem 0 1rem 0;
 }
 
 .mobileNavLink {
@@ -422,11 +422,11 @@
   }
 
   .mobileHeader {
-    padding: 1.5rem 1.5rem 1rem;
+    padding: 1rem 1.5rem 0.5rem;
   }
 
   .mobileNavigation {
-    padding: 0.5rem 0;
+    padding: 6rem 0 1rem 0;
   }
 
   .mobileNavLink {

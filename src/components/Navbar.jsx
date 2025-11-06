@@ -148,7 +148,6 @@ export default function Navbar() {
       {mobileOpen && (
         <div className={styles.mobileOverlay} onClick={closeMobileMenu}>
           <div className={styles.mobileMenu} onClick={(e) => e.stopPropagation()}>
-           
 
             {/* Mobile Navigation Links */}
             <div className={styles.mobileNavigation}>
@@ -190,7 +189,6 @@ export default function Navbar() {
                 {t('nav.contact')}
               </Link>
             </div>
-
 
           </div>
         </div>

@@ -476,9 +476,30 @@
   .meta-why-modern-images {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
   }
   .meta-modern-img {
     height: 80px;
     border-radius: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .meta-why-modern {
+    padding: 2rem 0 1rem;
+  }
+  .meta-why-modern-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .meta-why-modern-text p {
+    font-size: 0.95rem;
+  }
+  .meta-modern-img {
+    height: 50px;
+    border-radius: 6px;
+  }
+  .meta-why-modern-images {
+    gap: 4px;
   }
 }

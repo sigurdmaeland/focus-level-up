@@ -55,6 +55,21 @@ export default function MetaAds() {
         </div>
       </section>
 
+      {/* Modern Why Section */}
+      <section className="meta-why-modern">
+        <div className="ads-container meta-why-modern-wrapper">
+          <div className="meta-why-modern-text">
+            <h2>{t('metaAds.whyModern.title')}</h2>
+            <p>{t('metaAds.whyModern.description')}</p>
+          </div>
+          <div className="meta-why-modern-images">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Meta Example 1" className="meta-modern-img" />
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Meta Example 2" className="meta-modern-img" />
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Meta Example 3" className="meta-modern-img" />
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="ads-features">
         <div className="ads-container">

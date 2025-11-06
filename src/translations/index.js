@@ -246,6 +246,10 @@ export const translations = {
         title: 'Klar til å Dominere på Meta?',
         subtitle: 'La oss hjelpe deg å nå flere kunder, øke salget og bygge et sterkt merke gjennom strategisk Meta-markedsføring som leverer målbare resultater.',
         button: 'Bestill Gratis Strategisamtale'
+      },
+      whyModern: {
+        title: 'Hvorfor velge Meta-annonsering?',
+        description: 'Meta Ads gir deg kraften til å nå akkurat de kundene du ønsker – med smarte algoritmer, visuelle kampanjer og full kontroll over budsjettet. Vår ekspertise sikrer at du får synlighet, engasjement og resultater – uansett bransje.'
       }
     },
 
@@ -618,6 +622,10 @@ export const translations = {
         title: 'Ready to Dominate on Meta?',
         subtitle: 'Let us help you reach more customers, increase sales and build a strong brand through strategic Meta marketing that delivers measurable results.',
         button: 'Book Free Strategy Call'
+      },
+      whyModern: {
+        title: 'Why choose Meta advertising?',
+        description: 'Meta Ads give you the power to reach exactly the customers you want – with smart algorithms, visual campaigns and full budget control. Our expertise ensures you get visibility, engagement and results – no matter your industry.'
       }
     },
 
@@ -642,7 +650,7 @@ export const translations = {
         title: 'Our Process',
         step1: {
           title: 'Strategy Development',
-          description: 'We start by understanding your business, target audience, and goals. Based on this, we develop a customized TikTok strategy that maximizes your ROI.'
+          description: 'We start by understanding your business, target audience, and goals. Based on this, we develop a tailored TikTok strategy that maximizes your ROI.'
         },
         step2: {
           title: 'Creative Production',
@@ -650,7 +658,7 @@ export const translations = {
         },
         step3: {
           title: 'Campaign Launch',
-          description: 'We set up and launch your campaigns with precise targeting, optimized budgets, and continuous monitoring for the best results.'
+          description: 'We set up and launch your campaigns with precise targeting, optimized budgets, and continuous monitoring for best results.'
         },
         step4: {
           title: 'Optimization & Reporting',
@@ -659,9 +667,9 @@ export const translations = {
       },
       cta: {
         title: 'Ready to start with TikTok advertising?',
-        description: 'Contact us today for a free consultation and let us help you reach your marketing goals on TikTok. We create viral campaigns that hit your target audience.',
+        description: 'Contact us today for a free consultation and let us help you achieve your marketing goals on TikTok. We create viral campaigns that hit your target audience.',
         button: 'Get free consultation',
-        subtitle: '✓ Free analysis of your opportunities • ✓ No commitments'
+        subtitle: '✓ Free analysis of your opportunities • ✓ No obligations'
       }
     },
 
@@ -680,13 +688,13 @@ export const translations = {
       },
       why: {
         title: 'Why should you run Snapchat ads?',
-        description: 'Snapchat is a unique platform that focuses on authentic communication and creativity. With over 750 million active users consisting mainly of Gen Z and young millennials, Snapchat offers businesses the opportunity to reach a highly engaged and purchasing-strong target audience through innovative ad formats.'
+        description: 'Snapchat is a unique platform that focuses on authentic communication and creativity. With over 750 million active users, primarily consisting of Gen Z and young millennials, Snapchat offers businesses the opportunity to reach a highly engaged and purchase-driven audience through innovative ad formats.'
       },
       process: {
         title: 'Our Process',
         step1: {
           title: 'Target Audience Analysis',
-          description: 'We map your ideal Snapchat audience and develop a strategy that resonates with the platform\'s unique culture and user behavior.'
+          description: 'We map out your ideal Snapchat audience and develop a strategy that resonates with the platform\'s unique culture and user behavior.'
         },
         step2: {
           title: 'Creative Development',
@@ -703,43 +711,43 @@ export const translations = {
       },
       cta: {
         title: 'Ready to start with Snapchat advertising?',
-        description: 'Contact us today for a free consultation and let us help you reach your marketing goals on Snapchat. We create creative campaigns that engage your target audience.',
+        description: 'Contact us today for a free consultation and let us help you achieve your marketing goals on Snapchat. We create creative campaigns that engage your target audience.',
         button: 'Get free consultation',
-        subtitle: '✓ Free analysis of your opportunities • ✓ No commitments'
+        subtitle: '✓ Free analysis of your opportunities • ✓ No obligations'
       }
     },
 
     // Footer
     footer: {
-      companyDescription: 'We help businesses grow through strategic social media advertising.',
+      companyDescription: 'Vi hjelper bedrifter vokse gjennom strategisk annonsering på sosiale medier.',
       services: {
-        title: 'Services',
-        metaAds: 'Meta Advertising',
-        tiktokAds: 'TikTok Advertising',
-        snapchatAds: 'Snapchat Advertising'
+        title: 'Tjenester',
+        metaAds: 'Meta Annonsering',
+        tiktokAds: 'TikTok Annonsering',
+        snapchatAds: 'Snapchat Annonsering'
       },
       company: {
-        title: 'Company',
-        about: 'About us',
-        contact: 'Contact'
+        title: 'Selskap',
+        about: 'Om oss',
+        contact: 'Kontakt'
       },
       contactInfo: {
-        title: 'Contact'
+        title: 'Kontakt'
       },
-      copyright: '© 2025 Focus Level Up. All rights reserved.',
+      copyright: '© 2025 Focus Level Up. Alle rettigheter reservert.',
       links: {
-        privacy: 'Privacy',
-        terms: 'Terms'
+        privacy: 'Personvern',
+        terms: 'Vilkår'
       }
     },
 
     // Common
     common: {
-      readMore: 'Read more',
-      learnMore: 'Learn more',
-      getStarted: 'Get started',
-      contactUs: 'Contact us',
-      backToTop: 'Back to top'
+      readMore: 'Les mer',
+      learnMore: 'Lær mer',
+      getStarted: 'Kom i gang',
+      contactUs: 'Kontakt oss',
+      backToTop: 'Til toppen'
     }
   }
 };

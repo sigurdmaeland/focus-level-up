@@ -252,109 +252,90 @@ export const translations = {
     // TikTok Ads Page
     tiktokAds: {
       hero: {
-        title: 'Nå Gen Z & Millennial-markedet på TikTok',
-        subtitle: 'Utnytt TikToks eksplosive vekst og engasjerende format for å nå millioner av aktive brukere med kreativt innhold som går viralt og driver salg.',
-        cta: 'Start TikTok-kampanje'
+        title: 'TikTok Annonsering',
+        subtitle: 'Øk din digitale synlighet og nå markedsføringsmålene dine med effektive TikTok-annonser på verdens raskest voksende sosiale plattform. Utnyttt vår ekspertise for å maksimere din annonseringsstrategi.'
       },
-      what: {
+      stats: {
         title: 'Hvorfor TikTok Annonsering?',
-        description: 'TikTok har over 1 milliard aktive brukere og er den raskest voksende sosiale medier-plattformen. Med sitt unike algoritme og engasjerende videoformat gir TikTok bedrifter muligheten til å nå nye målgrupper på en autentisk og kreativ måte.'
+        users: 'Aktive brukere månedlig',
+        engagement: 'Høyere engasjementsrate',
+        time: 'Gjennomsnittlig daglig bruk',
+        age: 'Hovedaldergruppe (år)'
       },
-      benefits: {
-        title: 'Fordeler med TikTok Ads',
-        reach: {
-          title: 'Massiv Rekkevidde',
-          description: 'Nå millioner av brukere på verdens raskest voksende plattform med innhold som har potensial til å gå viralt.'
-        },
-        engagement: {
-          title: 'Høy Engasjement',
-          description: 'TikToks algoritme fremmer engasjerende innhold, noe som gir dine annonser bedre synlighet og interaksjon.'
-        },
-        targeting: {
-          title: 'Presis Målretting',
-          description: 'Avanserte målrettingsalternativer basert på interesser, atferd, demografi og mer for å nå riktig målgruppe.'
-        },
-        creative: {
-          title: 'Kreativt Format',
-          description: 'Kort-form videoinnhold som tillater kreativ storytelling og autentisk merkebygging.'
-        }
+      why: {
+        title: 'Hvorfor skal du kjøre TikTok-annonser?',
+        description: 'TikTok har revolusjonert måten vi konsumerer sosiale medier på. Med over 1 milliard aktive brukere globalt og en algoritme som favoriserer engasjerende innhold, tilbyr TikTok unike muligheter for bedrifter som ønsker å nå en yngre, høyt engasjert målgruppe.'
       },
       process: {
-        title: 'Vår TikTok Ads Strategi',
-        strategy: {
-          title: 'Strategi & Planlegging',
-          description: 'Vi utvikler en skreddersydd TikTok-strategi basert på din målgruppe, mål og budsjett.'
+        title: 'Vår Prosess',
+        step1: {
+          title: '1. Strategiutvikling',
+          description: 'Vi starter med å forstå din bedrift, målgruppe og mål. Basert på dette utvikler vi en skreddersydd TikTok-strategi som maksimerer din ROI.'
         },
-        content: {
-          title: 'Innholdsproduksjon',
-          description: 'Vårt kreative team produserer engasjerende videoinnhold som passer TikToks unike kultur og format.'
+        step2: {
+          title: '2. Kreativ Produksjon',
+          description: 'Vårt team produserer engasjerende videoinnhold som resonerer med TikToks unike kultur og format, sikrer autentisitet og maksimal engasjement.'
         },
-        optimization: {
-          title: 'Optimalisering & Analyse',
-          description: 'Kontinuerlig overvåking og optimalisering av kampanjer for å sikre best mulig resultater og ROI.'
+        step3: {
+          title: '3. Kampanjelansering',
+          description: 'Vi setter opp og lanserer dine kampanjer med presis målretting, optimaliserte budsjetter og kontinuerlig overvåking for beste resultater.'
+        },
+        step4: {
+          title: '4. Optimalisering & Rapportering',
+          description: 'Gjennom detaljert analyse og kontinuerlig optimalisering sikrer vi at dine TikTok-kampanjer leverer målbare resultater og konstant forbedring.'
         }
       },
       cta: {
-        title: 'Klar til å Erobre TikTok?',
-        description: 'La oss hjelpe deg å nå en ny generasjon kunder gjennom kreative TikTok-kampanjer.',
-        button: 'Kontakt Oss'
+        title: 'Klar til å starte med TikTok-annonsering?',
+        description: 'Kontakt oss i dag for en gratis konsultasjon og la oss hjelpe deg med å nå dine markedsføringsmål på TikTok. Vi skaper virale kampanjer som treffer din målgruppe.',
+        button: 'Få gratis konsultasjon',
+        subtitle: '✓ Gratis analyse av dine muligheter • ✓ Ingen forpliktelser'
       }
     },
 
     // Snapchat Ads Page
     snapchatAds: {
       hero: {
-        title: 'Nå Unge Voksne på Snapchat',
-        subtitle: 'Utnytt Snapchats unike AR-teknologi og engasjerende format for å skape minnerike opplevelser som driver merkelojalitet og konverteringer.',
-        cta: 'Start Snapchat-kampanje'
+        title: 'Snapchat Annonsering',
+        subtitle: 'Øk din digitale synlighet og nå markedsføringsmålene dine med effektive Snapchat-annonser på denne unike og kreative plattformen. Utnyttt vår ekspertise for å maksimere din annonseringsstrategi.'
       },
-      what: {
+      stats: {
         title: 'Hvorfor Snapchat Annonsering?',
-        description: 'Snapchat når over 750 millioner månedlige aktive brukere, hovedsakelig i alderen 13-34 år. Med sine innovative AR-filtre, Discover-innhold og Stories-format tilbyr Snapchat unike muligheter for kreativ markedsføring som engasjerer og konverterer.'
+        users: 'Aktive brukere månedlig',
+        snaps: 'Snaps sendt daglig',
+        time: 'Gjennomsnittlig daglig bruk',
+        age: 'Hovedaldergruppe (år)'
       },
-      benefits: {
-        title: 'Fordeler med Snapchat Ads',
-        audience: {
-          title: 'Ung Målgruppe',
-          description: 'Nå Gen Z og unge millennials som er kjøpsterke og påvirker trender i markedet.'
-        },
-        ar: {
-          title: 'AR-teknologi',
-          description: 'Bruk Snapchats ledende AR-filtre og linser for å skape interaktive og minnerike merkeopplevelser.'
-        },
-        engagement: {
-          title: 'Høy Engasjement',
-          description: 'Snapchat-brukere er høyt engasjerte og bruker i gjennomsnitt 30+ minutter daglig på plattformen.'
-        },
-        targeting: {
-          title: 'Smart Målretting',
-          description: 'Avanserte målrettingsverktøy inkludert Lookalike Audiences og interesse-basert targeting.'
-        }
+      why: {
+        title: 'Hvorfor skal du kjøre Snapchat-annonser?',
+        description: 'Snapchat er en unik plattform som fokuserer på autentisk kommunikasjon og kreativitet. Med over 750 millioner aktive brukere som hovedsakelig består av Gen Z og unge millennials, tilbyr Snapchat bedrifter muligheten til å nå en høyt engasjert og kjøpesterk målgruppe gjennom innovative annonseformater.'
       },
       process: {
-        title: 'Vår Snapchat Ads Tilnærming',
-        strategy: {
-          title: 'Strategiutvikling',
-          description: 'Vi skaper en omfattende Snapchat-strategi som utnytter plattformens unike funksjoner og målgruppe.'
+        title: 'Vår Prosess',
+        step1: {
+          title: '1. Målgruppeanalyse',
+          description: 'Vi kartlegger din ideelle Snapchat-målgruppe og utvikler en strategi som resonerer med plattformens unike kultur og brukeratferd.'
         },
-        creative: {
-          title: 'Kreativ Utvikling',
-          description: 'Produksjon av visuelt tiltalende innhold, AR-filtre og interaktive opplevelser som engasjerer brukere.'
+        step2: {
+          title: '2. Kreativ Utvikling',
+          description: 'Vårt team skaper visuelt tiltalende og engasjerende innhold som passer perfekt med Snapchats format og estetikk.'
         },
-        optimization: {
-          title: 'Kampanjeoptimalisering',
-          description: 'Kontinuerlig testing og optimalisering for å maksimere kampanjeytelse og ROI på Snapchat.'
+        step3: {
+          title: '3. Kampanjeimplementering',
+          description: 'Vi setter opp og lanserer dine Snapchat-kampanjer med optimal målretting, budsjettfordeling og timing for maksimal effekt.'
+        },
+        step4: {
+          title: '4. Kontinuerlig Optimalisering',
+          description: 'Gjennom løpende analyse og justering sikrer vi at dine Snapchat-annonser leverer sterk ROI og økt merkebevissthet.'
         }
       },
       cta: {
-        title: 'Klar til å Snap deg til Suksess?',
-        description: 'La oss hjelpe deg å nå og engasjere unge forbrukere gjennom innovative Snapchat-kampanjer.',
-        button: 'Kontakt Oss'
+        title: 'Klar til å starte med Snapchat-annonsering?',
+        description: 'Kontakt oss i dag for en gratis konsultasjon og la oss hjelpe deg med å nå dine markedsføringsmål på Snapchat. Vi skaper kreative kampanjer som engasjerer din målgruppe.',
+        button: 'Få gratis konsultasjon',
+        subtitle: '✓ Gratis analyse av dine muligheter • ✓ Ingen forpliktelser'
       }
     },
-
-   
- 
 
     // Footer
     footer: {
@@ -643,108 +624,90 @@ export const translations = {
     // TikTok Ads Page
     tiktokAds: {
       hero: {
-        title: 'Reach Gen Z & Millennials on TikTok',
-        subtitle: 'Harness TikTok\'s explosive growth and engaging format to reach millions of active users with creative content that goes viral and drives sales.',
-        cta: 'Start TikTok Campaign'
+        title: 'TikTok Advertising',
+        subtitle: 'Increase your digital visibility and reach your marketing goals with effective TikTok ads on the world\'s fastest-growing social platform. Leverage our expertise to maximize your advertising strategy.'
       },
-      what: {
+      stats: {
         title: 'Why TikTok Advertising?',
-        description: 'TikTok has over 1 billion active users and is the fastest-growing social media platform. With its unique algorithm and engaging video format, TikTok gives businesses the opportunity to reach new audiences in an authentic and creative way.'
+        users: 'Active users monthly',
+        engagement: 'Higher engagement rate',
+        time: 'Average daily usage',
+        age: 'Main age group (years)'
       },
-      benefits: {
-        title: 'Benefits of TikTok Ads',
-        reach: {
-          title: 'Massive Reach',
-          description: 'Reach millions of users on the world\'s fastest-growing platform with content that has the potential to go viral.'
-        },
-        engagement: {
-          title: 'High Engagement',
-          description: 'TikTok\'s algorithm promotes engaging content, giving your ads better visibility and interaction.'
-        },
-        targeting: {
-          title: 'Precise Targeting',
-          description: 'Advanced targeting options based on interests, behavior, demographics and more to reach the right audience.'
-        },
-        creative: {
-          title: 'Creative Format',
-          description: 'Short-form video content that allows for creative storytelling and authentic brand building.'
-        }
+      why: {
+        title: 'Why should you run TikTok ads?',
+        description: 'TikTok has revolutionized the way we consume social media. With over 1 billion active users globally and an algorithm that favors engaging content, TikTok offers unique opportunities for businesses looking to reach a younger, highly engaged audience.'
       },
       process: {
-        title: 'Our TikTok Ads Strategy',
-        strategy: {
-          title: 'Strategy & Planning',
-          description: 'We develop a customized TikTok strategy based on your audience, goals and budget.'
+        title: 'Our Process',
+        step1: {
+          title: '1. Strategy Development',
+          description: 'We start by understanding your business, target audience, and goals. Based on this, we develop a customized TikTok strategy that maximizes your ROI.'
         },
-        content: {
-          title: 'Content Production',
-          description: 'Our creative team produces engaging video content that fits TikTok\'s unique culture and format.'
+        step2: {
+          title: '2. Creative Production',
+          description: 'Our team produces engaging video content that resonates with TikTok\'s unique culture and format, ensuring authenticity and maximum engagement.'
         },
-        optimization: {
-          title: 'Optimization & Analysis',
-          description: 'Continuous monitoring and optimization of campaigns to ensure the best possible results and ROI.'
+        step3: {
+          title: '3. Campaign Launch',
+          description: 'We set up and launch your campaigns with precise targeting, optimized budgets, and continuous monitoring for the best results.'
+        },
+        step4: {
+          title: '4. Optimization & Reporting',
+          description: 'Through detailed analysis and continuous optimization, we ensure your TikTok campaigns deliver measurable results and constant improvement.'
         }
       },
       cta: {
-        title: 'Ready to Conquer TikTok?',
-        description: 'Let us help you reach a new generation of customers through creative TikTok campaigns.',
-        button: 'Contact Us'
+        title: 'Ready to start with TikTok advertising?',
+        description: 'Contact us today for a free consultation and let us help you reach your marketing goals on TikTok. We create viral campaigns that hit your target audience.',
+        button: 'Get free consultation',
+        subtitle: '✓ Free analysis of your opportunities • ✓ No commitments'
       }
     },
 
     // Snapchat Ads Page
     snapchatAds: {
       hero: {
-        title: 'Reach Young Adults on Snapchat',
-        subtitle: 'Leverage Snapchat\'s unique AR technology and engaging format to create memorable experiences that drive brand loyalty and conversions.',
-        cta: 'Start Snapchat Campaign'
+        title: 'Snapchat Advertising',
+        subtitle: 'Increase your digital visibility and reach your marketing goals with effective Snapchat ads on this unique and creative platform. Leverage our expertise to maximize your advertising strategy.'
       },
-      what: {
+      stats: {
         title: 'Why Snapchat Advertising?',
-        description: 'Snapchat reaches over 750 million monthly active users, primarily aged 13-34. With its innovative AR filters, Discover content and Stories format, Snapchat offers unique opportunities for creative marketing that engages and converts.'
+        users: 'Active users monthly',
+        snaps: 'Snaps sent daily',
+        time: 'Average daily usage',
+        age: 'Main age group (years)'
       },
-      benefits: {
-        title: 'Benefits of Snapchat Ads',
-        audience: {
-          title: 'Young Audience',
-          description: 'Reach Gen Z and young millennials who are purchasing-strong and influence market trends.'
-        },
-        ar: {
-          title: 'AR Technology',
-          description: 'Use Snapchat\'s leading AR filters and lenses to create interactive and memorable brand experiences.'
-        },
-        engagement: {
-          title: 'High Engagement',
-          description: 'Snapchat users are highly engaged and spend an average of 30+ minutes daily on the platform.'
-        },
-        targeting: {
-          title: 'Smart Targeting',
-          description: 'Advanced targeting tools including Lookalike Audiences and interest-based targeting.'
-        }
+      why: {
+        title: 'Why should you run Snapchat ads?',
+        description: 'Snapchat is a unique platform that focuses on authentic communication and creativity. With over 750 million active users consisting mainly of Gen Z and young millennials, Snapchat offers businesses the opportunity to reach a highly engaged and purchasing-strong target audience through innovative ad formats.'
       },
       process: {
-        title: 'Our Snapchat Ads Approach',
-        strategy: {
-          title: 'Strategy Development',
-          description: 'We create a comprehensive Snapchat strategy that leverages the platform\'s unique features and audience.'
+        title: 'Our Process',
+        step1: {
+          title: '1. Target Audience Analysis',
+          description: 'We map your ideal Snapchat audience and develop a strategy that resonates with the platform\'s unique culture and user behavior.'
         },
-        creative: {
-          title: 'Creative Development',
-          description: 'Production of visually appealing content, AR filters and interactive experiences that engage users.'
+        step2: {
+          title: '2. Creative Development',
+          description: 'Our team creates visually appealing and engaging content that fits perfectly with Snapchat\'s format and aesthetics.'
         },
-        optimization: {
-          title: 'Campaign Optimization',
-          description: 'Continuous testing and optimization to maximize campaign performance and ROI on Snapchat.'
+        step3: {
+          title: '3. Campaign Implementation',
+          description: 'We set up and launch your Snapchat campaigns with optimal targeting, budget allocation, and timing for maximum impact.'
+        },
+        step4: {
+          title: '4. Continuous Optimization',
+          description: 'Through ongoing analysis and adjustment, we ensure your Snapchat ads deliver strong ROI and increased brand awareness.'
         }
       },
       cta: {
-        title: 'Ready to Snap Your Way to Success?',
-        description: 'Let us help you reach and engage young consumers through innovative Snapchat campaigns.',
-        button: 'Contact Us'
+        title: 'Ready to start with Snapchat advertising?',
+        description: 'Contact us today for a free consultation and let us help you reach your marketing goals on Snapchat. We create creative campaigns that engage your target audience.',
+        button: 'Get free consultation',
+        subtitle: '✓ Free analysis of your opportunities • ✓ No commitments'
       }
     },
-
-
 
     // Footer
     footer: {

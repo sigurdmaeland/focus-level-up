@@ -133,7 +133,7 @@ export default function Contact() {
       } else if (error.status === 404) {
         errorMessage = 'Service eller template ikke funnet. Sjekk EmailJS IDs.';
       } else {
-        errorMessage += 'Prøv igjen senere eller kontakt oss direkte på hei@focuslevelup.no';
+        errorMessage += 'Prøv igjen senere eller kontakt oss direkte på contact@focusmarketingagency.no';
       }
       
       setError(errorMessage);
@@ -156,13 +156,13 @@ export default function Contact() {
             {/* Compact Contact Info */}
             <div className="contact-info-compact">
               <span className="contact-item-compact">
-                <FaEnvelope /> hei@focuslevelup.no
+                <FaEnvelope /> contact@focusmarketingagency.no
               </span>
               <span className="contact-item-compact">
-                <FaPhone /> +47 483 53 943
+                <FaPhone /> +47 97405764
               </span>
               <span className="contact-item-compact">
-                <FaInstagram /> @focuslevelup
+                <FaInstagram /> @focusmarketingagency.no
               </span>
             </div>
 

@@ -297,10 +297,20 @@ export default function Home() {
                 </p>
               </div>
               <div className="testimonial-author">
-                <img 
-                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt={t('home.testimonials.testimonial2.author')}
-                />
+                <div style={{
+                  width: '50px',
+                  height: '50px',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'white',
+                  fontWeight: 'bold',
+                  fontSize: '1.2rem'
+                }}>
+                  👩‍💼
+                </div>
                 <div>
                   <strong>{t('home.testimonials.testimonial2.author')}</strong>
                   <span>{t('home.testimonials.testimonial2.company')}</span>
@@ -372,9 +382,6 @@ export default function Home() {
             <div className="cta-buttons">
               <Link to="/contact" className="cta-button primary large">
                 {t('home.cta.primaryButton')}
-              </Link>
-              <Link to="/services" className="cta-button secondary large">
-                {t('home.cta.secondaryButton')}
               </Link>
             </div>
             <div className="cta-guarantee">

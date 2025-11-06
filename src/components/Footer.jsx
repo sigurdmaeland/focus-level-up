@@ -25,8 +25,8 @@ export default function Footer() {
               {t('footer.companyDescription')}
             </p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
-              <a href="mailto:post@focuslevelup.no" style={{ color: '#00bcd4', textDecoration: 'none' }}>
-                post@focuslevelup.no
+              <a href="mailto:contact@focusmarketingagency.no" style={{ color: '#00bcd4', textDecoration: 'none' }}>
+                contact@focusmarketingagency.no
               </a>
             </div>
           </div>
@@ -54,11 +54,11 @@ export default function Footer() {
           <div>
             <h4 style={{ color: '#00e6b2', marginBottom: '1rem' }}>{t('footer.contactInfo.title')}</h4>
             <div style={{ color: '#cccccc', lineHeight: '1.6' }}>
-              <p>+47 123 45 678</p>
-              <p>post@focuslevelup.no</p>
+              <p>+47 97405764</p>
+              <p>contact@focusmarketingagency.no</p>
               <p>
                 Innovasjonsveien 1<br/>
-                0123 Oslo
+                0123 Kristiansand
               </p>
             </div>
           </div>

@@ -38,81 +38,494 @@ export default function SnapchatAds() {
             />
           </div>
           
-          <div style={{ position: 'relative', zIndex: 1 }}>
-            <h1>Snapchat Annonsering</h1>
+          <div style={{ position: 'relative', zIndex: 1, padding: '0 1rem' }}>
+            <h1 style={{ 
+              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+              marginBottom: '1.5rem'
+            }}>{t('snapchatAds.hero.title')}</h1>
             <p style={{ 
               color: '#cccccc', 
-              fontSize: '1.2rem', 
+              fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', 
               maxWidth: '800px', 
               margin: '0 auto',
-              lineHeight: '1.6'
+              lineHeight: '1.6',
+              padding: '0 1rem'
             }}>
-              Øk din digitale synlighet og nå markedsføringsmålene dine med effektive Snapchat-annonser på denne unike og kreative plattformen. Utnyttt vår ekspertise for å maksimere din annonseringsstrategi.
+              {t('snapchatAds.hero.subtitle')}
             </p>
           </div>
         </section>
 
-        {/* What is Snapchat Ads Section */}
-        <section className="section">
-          <div className="text-center mb-4">
-            <h2>{t('snapchatAds.what.title')}</h2>
-            <p style={{ color: '#cccccc', fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>
-              {t('snapchatAds.what.description')}
+        {/* Statistics Section - Clean Design */}
+        <section className="section" style={{ marginTop: 'clamp(3rem, 8vw, 5rem)', padding: '0 1rem' }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto', textAlign: 'center' }}>
+            <h2 style={{ 
+              marginBottom: 'clamp(2rem, 6vw, 4rem)', 
+              fontSize: 'clamp(1.8rem, 4vw, 2.5rem)',
+              padding: '0 1rem'
+            }}>{t('snapchatAds.stats.title')}</h2>
+            
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+              gap: 'clamp(1rem, 3vw, 2rem)', 
+              marginBottom: '3rem',
+              padding: '0 1rem'
+            }}
+            className="stats-grid">
+
+            <style>{`
+              .stats-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: clamp(1rem, 3vw, 2rem) !important;
+              }
+              @media (min-width: 480px) {
+                .stats-grid {
+                  grid-template-columns: repeat(2, 1fr) !important;
+                }
+              }
+              @media (min-width: 1024px) {
+                .stats-grid {
+                  grid-template-columns: repeat(4, 1fr) !important;
+                }
+              }
+            `}</style>
+              <div style={{ 
+                padding: 'clamp(1.5rem, 4vw, 2rem)', 
+                background: 'rgba(0, 188, 212, 0.1)', 
+                borderRadius: '15px', 
+                border: '1px solid rgba(0, 188, 212, 0.3)' 
+              }}>
+                <h3 style={{ 
+                  color: '#00bcd4', 
+                  fontSize: 'clamp(2rem, 5vw, 2.5rem)', 
+                  margin: '0 0 0.5rem 0', 
+                  fontWeight: 'bold' 
+                }}>750M+</h3>
+                <p style={{ 
+                  color: '#cccccc', 
+                  margin: '0', 
+                  fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' 
+                }}>{t('snapchatAds.stats.users')}</p>
+              </div>
+              <div style={{ 
+                padding: 'clamp(1.5rem, 4vw, 2rem)', 
+                background: 'rgba(0, 188, 212, 0.1)', 
+                borderRadius: '15px', 
+                border: '1px solid rgba(0, 188, 212, 0.3)' 
+              }}>
+                <h3 style={{ 
+                  color: '#00bcd4', 
+                  fontSize: 'clamp(2rem, 5vw, 2.5rem)', 
+                  margin: '0 0 0.5rem 0', 
+                  fontWeight: 'bold' 
+                }}>5B+</h3>
+                <p style={{ 
+                  color: '#cccccc', 
+                  margin: '0', 
+                  fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' 
+                }}>{t('snapchatAds.stats.snaps')}</p>
+              </div>
+              <div style={{ 
+                padding: 'clamp(1.5rem, 4vw, 2rem)', 
+                background: 'rgba(0, 188, 212, 0.1)', 
+                borderRadius: '15px', 
+                border: '1px solid rgba(0, 188, 212, 0.3)' 
+              }}>
+                <h3 style={{ 
+                  color: '#00bcd4', 
+                  fontSize: 'clamp(2rem, 5vw, 2.5rem)', 
+                  margin: '0 0 0.5rem 0', 
+                  fontWeight: 'bold' 
+                }}>30 min</h3>
+                <p style={{ 
+                  color: '#cccccc', 
+                  margin: '0', 
+                  fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' 
+                }}>{t('snapchatAds.stats.time')}</p>
+              </div>
+              <div style={{ 
+                padding: 'clamp(1.5rem, 4vw, 2rem)', 
+                background: 'rgba(0, 188, 212, 0.1)', 
+                borderRadius: '15px', 
+                border: '1px solid rgba(0, 188, 212, 0.3)' 
+              }}>
+                <h3 style={{ 
+                  color: '#00bcd4', 
+                  fontSize: 'clamp(2rem, 5vw, 2.5rem)', 
+                  margin: '0 0 0.5rem 0', 
+                  fontWeight: 'bold' 
+                }}>13-34</h3>
+                <p style={{ 
+                  color: '#cccccc', 
+                  margin: '0', 
+                  fontSize: 'clamp(0.9rem, 2.5vw, 1rem)' 
+                }}>{t('snapchatAds.stats.age')}</p>
+              </div>
+            </div>
+
+
+          </div>
+        </section>
+
+        {/* Why Run Ads Section - Text + Visual */}
+        <section className="section" style={{ 
+          marginTop: 'clamp(3rem, 8vw, 6rem)', 
+          padding: 'clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)', 
+          background: 'linear-gradient(135deg, rgba(42, 82, 152, 0.05), rgba(255, 252, 0, 0.03))' 
+        }}>
+          <div style={{ 
+            display: 'flex', 
+            flexDirection: 'column',
+            alignItems: 'center', 
+            gap: 'clamp(2rem, 6vw, 5rem)', 
+            maxWidth: '1200px', 
+            margin: '0 auto' 
+          }}
+          className="content-wrapper">
+
+          <style>{`
+            .content-wrapper {
+              display: flex !important;
+              flex-direction: column !important;
+              align-items: center !important;
+            }
+            .text-content {
+              width: 100% !important;
+              text-align: center !important;
+            }
+            .image-content {
+              width: 100% !important;
+              max-width: 600px !important;
+            }
+            @media (min-width: 768px) {
+              .content-wrapper {
+                flex-direction: row !important;
+                align-items: center !important;
+                gap: 5rem !important;
+              }
+              .text-content {
+                flex: 1 !important;
+                text-align: left !important;
+              }
+              .image-content {
+                flex: 1 !important;
+                max-width: none !important;
+              }
+            }
+          `}</style>
+
+            <div className="text-content">
+              <h2 style={{ 
+                marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)', 
+                fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', 
+                background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                padding: '0 1rem'
+              }}>
+                {t('snapchatAds.why.title')}
+              </h2>
+              <p style={{ 
+                color: '#e0e0e0', 
+                fontSize: 'clamp(1rem, 3vw, 1.15rem)', 
+                lineHeight: '1.8', 
+                marginBottom: 'clamp(1rem, 3vw, 2rem)',
+                fontWeight: '400',
+                maxWidth: '800px',
+                margin: '0 auto',
+                padding: '0 1rem'
+              }}>
+                {t('snapchatAds.why.description')}
+              </p>
+            </div>
+            
+            <div className="image-content" style={{ padding: '0 1rem' }}>
+              {/* Enhanced placeholder for image */}
+              <div style={{ 
+                width: '100%', 
+                height: 'clamp(300px, 50vw, 450px)', 
+                background: 'linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(0, 230, 178, 0.05))',
+                border: '2px dashed rgba(0, 188, 212, 0.4)', 
+                borderRadius: 'clamp(15px, 3vw, 20px)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#00bcd4',
+                fontSize: 'clamp(1rem, 2.5vw, 1.1rem)',
+                fontWeight: '500',
+                position: 'relative',
+                overflow: 'hidden'
+              }}>
+                <div style={{ textAlign: 'center' }}>
+                  <div style={{ fontSize: 'clamp(2rem, 6vw, 3rem)', marginBottom: '1rem' }}>📸</div>
+                  <p style={{ margin: '0' }}>Bilde kommer her</p>
+                </div>
+                
+                {/* Decorative elements - hidden on mobile */}
+                <div style={{ 
+                  position: 'absolute', 
+                  top: '-10px', 
+                  right: '-10px', 
+                  width: 'clamp(40px, 8vw, 60px)', 
+                  height: 'clamp(40px, 8vw, 60px)', 
+                  background: 'rgba(255, 252, 0, 0.1)', 
+                  borderRadius: '50%',
+                  display: window.innerWidth > 768 ? 'block' : 'none'
+                }}></div>
+                <div style={{ 
+                  position: 'absolute', 
+                  bottom: '-15px', 
+                  left: '-15px', 
+                  width: 'clamp(50px, 10vw, 80px)', 
+                  height: 'clamp(50px, 10vw, 80px)', 
+                  background: 'rgba(42, 82, 152, 0.1)', 
+                  borderRadius: '50%',
+                  display: window.innerWidth > 768 ? 'block' : 'none'
+                }}></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section - 4 Steps */}
+        <section className="section" style={{ padding: '0 1rem', marginTop: 'clamp(3rem, 8vw, 5rem)' }}>
+          <h2 className="text-center" style={{ 
+            marginBottom: 'clamp(2rem, 6vw, 4rem)', 
+            fontSize: 'clamp(1.8rem, 4vw, 2.5rem)' 
+          }}>{t('snapchatAds.process.title')}</h2>
+          <div style={{ 
+            display: 'grid', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+            gap: 'clamp(1rem, 3vw, 2rem)', 
+            maxWidth: '1200px', 
+            margin: '0 auto' 
+          }}
+          className="process-grid">
+
+          <style>{`
+            .process-grid {
+              display: grid !important;
+              grid-template-columns: 1fr !important;
+              gap: clamp(1rem, 3vw, 2rem) !important;
+            }
+            @media (min-width: 768px) {
+              .process-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+              }
+            }
+          `}</style>
+            
+            <div style={{ 
+              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              borderRadius: 'clamp(10px, 2vw, 15px)', 
+              padding: 'clamp(1.5rem, 4vw, 2rem)',
+              color: 'white',
+              position: 'relative'
+            }}>
+              <div style={{ 
+                position: 'absolute', 
+                top: 'clamp(1rem, 3vw, 1.5rem)', 
+                left: 'clamp(1rem, 3vw, 1.5rem)',
+                width: 'clamp(35px, 6vw, 40px)', 
+                height: 'clamp(35px, 6vw, 40px)', 
+                borderRadius: '50%', 
+                border: '2px solid white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
+                fontWeight: 'bold'
+              }}>1</div>
+              <h4 style={{ 
+                marginTop: 'clamp(2.5rem, 6vw, 3rem)', 
+                marginBottom: 'clamp(0.75rem, 2vw, 1rem)',
+                fontSize: 'clamp(1.1rem, 3vw, 1.25rem)'
+              }}>{t('snapchatAds.process.step1.title')}</h4>
+              <p style={{ 
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', 
+                lineHeight: '1.6',
+                margin: '0'
+              }}>{t('snapchatAds.process.step1.description')}</p>
+            </div>
+
+            <div style={{ 
+              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              borderRadius: 'clamp(10px, 2vw, 15px)', 
+              padding: 'clamp(1.5rem, 4vw, 2rem)',
+              color: 'white',
+              position: 'relative'
+            }}>
+              <div style={{ 
+                position: 'absolute', 
+                top: 'clamp(1rem, 3vw, 1.5rem)', 
+                left: 'clamp(1rem, 3vw, 1.5rem)',
+                width: 'clamp(35px, 6vw, 40px)', 
+                height: 'clamp(35px, 6vw, 40px)', 
+                borderRadius: '50%', 
+                border: '2px solid white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
+                fontWeight: 'bold'
+              }}>2</div>
+              <h4 style={{ 
+                marginTop: 'clamp(2.5rem, 6vw, 3rem)', 
+                marginBottom: 'clamp(0.75rem, 2vw, 1rem)',
+                fontSize: 'clamp(1.1rem, 3vw, 1.25rem)'
+              }}>{t('snapchatAds.process.step2.title')}</h4>
+              <p style={{ 
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', 
+                lineHeight: '1.6',
+                margin: '0'
+              }}>{t('snapchatAds.process.step2.description')}</p>
+            </div>
+
+            <div style={{ 
+              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              borderRadius: 'clamp(10px, 2vw, 15px)', 
+              padding: 'clamp(1.5rem, 4vw, 2rem)',
+              color: 'white',
+              position: 'relative'
+            }}>
+              <div style={{ 
+                position: 'absolute', 
+                top: 'clamp(1rem, 3vw, 1.5rem)', 
+                left: 'clamp(1rem, 3vw, 1.5rem)',
+                width: 'clamp(35px, 6vw, 40px)', 
+                height: 'clamp(35px, 6vw, 40px)', 
+                borderRadius: '50%', 
+                border: '2px solid white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
+                fontWeight: 'bold'
+              }}>3</div>
+              <h4 style={{ 
+                marginTop: 'clamp(2.5rem, 6vw, 3rem)', 
+                marginBottom: 'clamp(0.75rem, 2vw, 1rem)',
+                fontSize: 'clamp(1.1rem, 3vw, 1.25rem)'
+              }}>{t('snapchatAds.process.step3.title')}</h4>
+              <p style={{ 
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', 
+                lineHeight: '1.6',
+                margin: '0'
+              }}>{t('snapchatAds.process.step3.description')}</p>
+            </div>
+
+            <div style={{ 
+              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              borderRadius: 'clamp(10px, 2vw, 15px)', 
+              padding: 'clamp(1.5rem, 4vw, 2rem)',
+              color: 'white',
+              position: 'relative'
+            }}>
+              <div style={{ 
+                position: 'absolute', 
+                top: 'clamp(1rem, 3vw, 1.5rem)', 
+                left: 'clamp(1rem, 3vw, 1.5rem)',
+                width: 'clamp(35px, 6vw, 40px)', 
+                height: 'clamp(35px, 6vw, 40px)', 
+                borderRadius: '50%', 
+                border: '2px solid white',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
+                fontWeight: 'bold'
+              }}>4</div>
+              <h4 style={{ 
+                marginTop: 'clamp(2.5rem, 6vw, 3rem)', 
+                marginBottom: 'clamp(0.75rem, 2vw, 1rem)',
+                fontSize: 'clamp(1.1rem, 3vw, 1.25rem)'
+              }}>{t('snapchatAds.process.step4.title')}</h4>
+              <p style={{ 
+                fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', 
+                lineHeight: '1.6',
+                margin: '0'
+              }}>{t('snapchatAds.process.step4.description')}</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact CTA Section */}
+        <section className="section text-center" style={{ 
+          padding: 'clamp(3rem, 8vw, 5rem) 1rem',
+          marginTop: 'clamp(3rem, 8vw, 5rem)',
+          background: 'linear-gradient(135deg, rgba(255, 252, 0, 0.03), rgba(42, 82, 152, 0.05))',
+          borderRadius: '20px',
+          margin: 'clamp(3rem, 8vw, 5rem) 1rem 0'
+        }}>
+          <div style={{ 
+            maxWidth: '700px', 
+            margin: '0 auto',
+            position: 'relative'
+          }}>
+            {/* Decorative elements */}
+            <div style={{
+              position: 'absolute',
+              top: '-10px',
+              left: '-10px',
+              width: '60px',
+              height: '60px',
+              background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
+              borderRadius: '50%',
+              opacity: 0.1,
+              display: window.innerWidth > 768 ? 'block' : 'none'
+            }}></div>
+            
+            <h2 style={{ 
+              fontSize: 'clamp(1.8rem, 5vw, 2.5rem)',
+              marginBottom: 'clamp(1.5rem, 4vw, 2rem)',
+              background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              fontWeight: 'bold'
+            }}>{t('snapchatAds.cta.title')}</h2>
+            
+            <p style={{ 
+              color: '#e0e0e0', 
+              fontSize: 'clamp(1.1rem, 3vw, 1.25rem)', 
+              marginBottom: 'clamp(2rem, 5vw, 3rem)',
+              lineHeight: '1.7',
+              padding: '0 1rem',
+              fontWeight: '400'
+            }}>
+              {t('snapchatAds.cta.description')}
             </p>
-          </div>
-        </section>
-
-        {/* Benefits Section */}
-        <section className="section">
-          <h2 className="text-center mb-4">{t('snapchatAds.benefits.title')}</h2>
-          <div className="grid">
-            <div className="card">
-              <h4>{t('snapchatAds.benefits.audience.title')}</h4>
-              <p>{t('snapchatAds.benefits.audience.description')}</p>
-            </div>
-            <div className="card">
-              <h4>{t('snapchatAds.benefits.ar.title')}</h4>
-              <p>{t('snapchatAds.benefits.ar.description')}</p>
-            </div>
-            <div className="card">
-              <h4>{t('snapchatAds.benefits.engagement.title')}</h4>
-              <p>{t('snapchatAds.benefits.engagement.description')}</p>
-            </div>
-            <div className="card">
-              <h4>{t('snapchatAds.benefits.targeting.title')}</h4>
-              <p>{t('snapchatAds.benefits.targeting.description')}</p>
-            </div>
-          </div>
-        </section>
-
-        {/* Our Process Section */}
-        <section className="section">
-          <h2 className="text-center mb-4">{t('snapchatAds.process.title')}</h2>
-          <div className="grid">
-            <div className="card">
-              <h4>{t('snapchatAds.process.strategy.title')}</h4>
-              <p>{t('snapchatAds.process.strategy.description')}</p>
-            </div>
-            <div className="card">
-              <h4>{t('snapchatAds.process.creative.title')}</h4>
-              <p>{t('snapchatAds.process.creative.description')}</p>
-            </div>
-            <div className="card">
-              <h4>{t('snapchatAds.process.optimization.title')}</h4>
-              <p>{t('snapchatAds.process.optimization.description')}</p>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
+              <a href="/kontakt" className="cta-button" style={{ 
+                display: 'inline-block',
+                fontSize: 'clamp(1.1rem, 3vw, 1.2rem)',
+                padding: 'clamp(1rem, 3vw, 1.25rem) clamp(2rem, 5vw, 2.5rem)',
+                background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
+                color: '#1a1a1a',
+                textDecoration: 'none',
+                borderRadius: '50px',
+                fontWeight: 'bold',
+                transition: 'all 0.3s ease',
+                border: 'none',
+                boxShadow: '0 4px 15px rgba(0, 188, 212, 0.3)'
+              }}>
+{t('snapchatAds.cta.button')}
+              </a>
+              
+              <p style={{ 
+                color: '#999', 
+                fontSize: 'clamp(0.9rem, 2vw, 1rem)', 
+                margin: '0',
+                fontStyle: 'italic'
+              }}>
+                {t('snapchatAds.cta.subtitle')}
+              </p>
             </div>
           </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="section text-center">
-          <h2>{t('snapchatAds.cta.title')}</h2>
-          <p style={{ color: '#cccccc', fontSize: '1.2rem', marginBottom: '2rem' }}>
-            {t('snapchatAds.cta.description')}
-          </p>
-          <a href="/contact" className="cta-button">
-            {t('snapchatAds.cta.button')}
-          </a>
         </section>
       </div>
     </div>

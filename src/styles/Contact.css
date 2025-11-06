@@ -36,13 +36,14 @@
   line-height: 1.5;
   max-width: 500px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 /* Compact Contact Info */
 .contact-info-compact {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 25px;
   margin-bottom: 25px;
   flex-wrap: wrap;
 }

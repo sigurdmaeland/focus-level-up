@@ -19,16 +19,12 @@ export default function Navbar() {
       path: '/meta-ads'
     },
     { 
-      name: t('nav.servicesDropdown.googleAds'), 
-      path: '/google-ads'
+      name: t('nav.servicesDropdown.tiktokAds'), 
+      path: '/tiktok-ads'
     },
     { 
-      name: t('nav.servicesDropdown.websiteShop'), 
-      path: '/website-shop'
-    },
-    { 
-      name: t('nav.servicesDropdown.seo'), 
-      path: '/seo'
+      name: t('nav.servicesDropdown.snapchatAds'), 
+      path: '/snapchat-ads'
     },
   ];
 

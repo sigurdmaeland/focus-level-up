@@ -10,9 +10,9 @@ import {
   FaChartLine, 
   FaBullseye, 
   FaHeadset,
-  FaGlobe,
   FaBullhorn,
-  FaSearch,
+  FaVideo,
+  FaCamera,
   FaStar
 } from 'react-icons/fa';
 
@@ -175,40 +175,40 @@ export default function Home() {
           <div className="services-grid-clean">
             <div className="service-card-clean">
               <div className="service-icon">
-                <FaGlobe />
-              </div>
-              <h3>{t('home.services.websiteShop.title')}</h3>
-              <p>
-                {t('home.services.websiteShop.description')}
-              </p>
-              <Link to="/website-shop" className="service-link">
-                {t('home.services.websiteShop.cta')}
-              </Link>
-            </div>
-
-            <div className="service-card-clean">
-              <div className="service-icon">
                 <FaBullhorn />
               </div>
-              <h3>{t('home.services.digitalMarketing.title')}</h3>
+              <h3>{t('home.services.metaAds.title')}</h3>
               <p>
-                {t('home.services.digitalMarketing.description')}
+                {t('home.services.metaAds.description')}
               </p>
               <Link to="/meta-ads" className="service-link">
-                {t('home.services.digitalMarketing.cta')}
+                {t('home.services.metaAds.cta')}
               </Link>
             </div>
 
             <div className="service-card-clean">
               <div className="service-icon">
-                <FaSearch />
+                <FaVideo />
               </div>
-              <h3>{t('home.services.seo.title')}</h3>
+              <h3>{t('home.services.tiktokAds.title')}</h3>
               <p>
-                {t('home.services.seo.description')}
+                {t('home.services.tiktokAds.description')}
               </p>
-              <Link to="/seo" className="service-link">
-                {t('home.services.seo.cta')}
+              <Link to="/tiktok-ads" className="service-link">
+                {t('home.services.tiktokAds.cta')}
+              </Link>
+            </div>
+
+            <div className="service-card-clean">
+              <div className="service-icon">
+                <FaCamera />
+              </div>
+              <h3>{t('home.services.snapchatAds.title')}</h3>
+              <p>
+                {t('home.services.snapchatAds.description')}
+              </p>
+              <Link to="/snapchat-ads" className="service-link">
+                {t('home.services.snapchatAds.cta')}
               </Link>
             </div>
           </div>

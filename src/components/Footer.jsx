@@ -36,9 +36,8 @@ export default function Footer() {
             <h4 style={{ color: '#00e6b2', marginBottom: '1rem' }}>{t('footer.services.title')}</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <Link to="/meta-ads" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.services.metaAds')}</Link>
-              <Link to="/google-ads" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.services.googleAds')}</Link>
-              <Link to="/website-shop" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.services.websiteShop')}</Link>
-              <Link to="/seo" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.services.seo')}</Link>
+              <Link to="/tiktok-ads" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.services.tiktokAds')}</Link>
+              <Link to="/snapchat-ads" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.services.snapchatAds')}</Link>
             </div>
           </div>
 
@@ -48,7 +47,6 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <Link to="/about" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.company.about')}</Link>
               <Link to="/contact" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.company.contact')}</Link>
-              <Link to="/services" style={{ color: '#cccccc', textDecoration: 'none' }}>{t('footer.company.allServices')}</Link>
             </div>
           </div>
 

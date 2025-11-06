@@ -8,9 +8,8 @@ export const translations = {
       contact: 'Kontakt',
       servicesDropdown: {
         metaAds: 'Meta Annonsering',
-        googleAds: 'Google Annonsering',
-        websiteShop: 'Nettside & Nettbutikk',
-        seo: 'SEO'
+        tiktokAds: 'TikTok Annonsering',
+        snapchatAds: 'Snapchat Annonsering'
       }
     },
 
@@ -34,19 +33,19 @@ export const translations = {
       services: {
         badge: 'Våre Digitale Løsninger',
         title: 'Digitale løsninger som driver vekst',
-        websiteShop: {
-          title: 'Nettside & Nettbutikk',
-          description: 'Trenger du en nettside eller nettbutikk, eller ønsker å du å bygge om en eksisterende en? Vi har kompetansen til å bistå deg. Benyttt knappen under for å lese mer.',
+        metaAds: {
+          title: 'Meta Annonsering',
+          description: 'Nå millioner av brukere på Facebook og Instagram med målrettede kampanjer som skaper reelle resultater for bedriften din.',
           cta: 'Les Mer →'
         },
-        digitalMarketing: {
-          title: 'Digital Markedsføring',
-          description: 'Ønsker du å nå ut til potensielle kunder på nett? Benytt knappen under for å lese mer om hvordan vi jobber for å øke synlighet og salg.',
+        tiktokAds: {
+          title: 'TikTok Annonsering',
+          description: 'Engasjer Gen Z og millennial-markedet med kreative TikTok-kampanjer som går viralt og driver salg.',
           cta: 'Les Mer →'
         },
-        seo: {
-          title: 'SEO',
-          description: 'Ønsker du å forbedre din rangering på søkemotorer og tiltrekke deg flere kunder? Benytt knappen under for å lese mer.',
+        snapchatAds: {
+          title: 'Snapchat Annonsering',
+          description: 'Utnytt Snapchats AR-teknologi og unike format for å skape minnerike opplevelser som konverterer.',
           cta: 'Les Mer →'
         }
       },
@@ -250,102 +249,126 @@ export const translations = {
       }
     },
 
-    // Google Ads Page
-    googleAds: {
+    // TikTok Ads Page
+    tiktokAds: {
       hero: {
-        badge: 'Google Advertising',
-        title: 'Dominer Google Søkeresultater',
-        subtitle: 'Bli synlig når potensielle kunder aktivt søker etter dine tjenester. Våre Google Ads-eksperter sikrer maksimal ROI og kvalitetstrafikk som konverterer.',
-        cta: 'Få Gratis Google Ads Analyse'
+        title: 'Nå Gen Z & Millennial-markedet på TikTok',
+        subtitle: 'Utnytt TikToks eksplosive vekst og engasjerende format for å nå millioner av aktive brukere med kreativt innhold som går viralt og driver salg.',
+        cta: 'Start TikTok-kampanje'
       },
-      stats: {
-        title: 'Google i Tall',
-        subtitle: 'Google prosesserer milliarder av søk daglig - vær synlig når kundene aktivt leter etter det du tilbyr',
-        stat1: 'Daglige Google-søk',
-        stat2: 'Markedsandel søkemotorer',
-        stat3: 'Gjennomsnittlig ROI',
-        stat4: 'Kjøpeklare kunder klikker annonser'
+      what: {
+        title: 'Hvorfor TikTok Annonsering?',
+        description: 'TikTok har over 1 milliard aktive brukere og er den raskest voksende sosiale medier-plattformen. Med sitt unike algoritme og engasjerende videoformat gir TikTok bedrifter muligheten til å nå nye målgrupper på en autentisk og kreativ måte.'
       },
-      features: {
-        title: 'Våre Google Ads Tjenester',
-        subtitle: 'Komplett Google-markedsføring som fanger kunder når de er mest kjøpeklare',
-        search: {
-          title: 'Søkeannonser (Search)',
-          description: 'Målrettede tekstannonser som vises når potensielle kunder aktivt søker etter dine produkter eller tjenester. Høy kjøpsintensjon gir maksimal ROI og kvalitetstrafikk som konverterer.'
+      benefits: {
+        title: 'Fordeler med TikTok Ads',
+        reach: {
+          title: 'Massiv Rekkevidde',
+          description: 'Nå millioner av brukere på verdens raskest voksende plattform med innhold som har potensial til å gå viralt.'
         },
-        shopping: {
-          title: 'Shopping Ads',
-          description: 'Visuelle produktannonser med bilder, priser og produktinformasjon direkte i søkeresultatene. Perfekt for e-handel og produktsalg med umiddelbar visuell impact.'
+        engagement: {
+          title: 'Høy Engasjement',
+          description: 'TikToks algoritme fremmer engasjerende innhold, noe som gir dine annonser bedre synlighet og interaksjon.'
         },
-        youtube: {
-          title: 'YouTube Annonser',
-          description: 'Engasjerende video-annonser på verdens nest største søkemotor. Fra korte bumper-ads til omfattende brand stories som skaper varige inntrykk og driver handling.'
+        targeting: {
+          title: 'Presis Målretting',
+          description: 'Avanserte målrettingsalternativer basert på interesser, atferd, demografi og mer for å nå riktig målgruppe.'
         },
-        performance: {
-          title: 'Performance Max',
-          description: 'AI-drevne kampanjer som automatisk optimaliserer budskap, målgrupper og budsjett på tvers av alle Google-kanaler for å maksimere ytelse og konverteringer.'
+        creative: {
+          title: 'Kreativt Format',
+          description: 'Kort-form videoinnhold som tillater kreativ storytelling og autentisk merkebygging.'
         }
       },
       process: {
-        title: 'Vår Datadrevne Google Ads Metodikk',
-        subtitle: 'En strategisk tilnærming som sikrer at hver krone investert gir maksimal avkastning',
-        step1: {
-          title: 'Omfattende Søkeord & Markedsanalyse',
-          description: 'Vi starter med dyptgående research av søkevolum, konkurranse og brukerintensjon. Gjennom avanserte verktøy identifiserer vi de mest lønnsomme søkeordene og markedsmulighetene dine konkurrenter overser.'
+        title: 'Vår TikTok Ads Strategi',
+        strategy: {
+          title: 'Strategi & Planlegging',
+          description: 'Vi utvikler en skreddersydd TikTok-strategi basert på din målgruppe, mål og budsjett.'
         },
-        step2: {
-          title: 'Strategisk Kampanjestruktur',
-          description: 'Vi bygger logiske, skalerbare kampanjestrukturer som maksimerer Quality Score og gir deg full kontroll over budsjettallokering. Hver kampanje er optimalisert for spesifikke forretningsmål.'
+        content: {
+          title: 'Innholdsproduksjon',
+          description: 'Vårt kreative team produserer engasjerende videoinnhold som passer TikToks unike kultur og format.'
         },
-        step3: {
-          title: 'Konverteringsoptimaliserte Landing Pages',
-          description: 'Vi sørger for at landingssidene dine matcher annonsebudskapet perfekt og er optimalisert for konvertering. Dette forbedrer både Quality Score og konverteringsraten betydelig.'
-        },
-        step4: {
-          title: 'Kontinuerlig Optimalisering & Rapportering',
-          description: 'Gjennom daglig overvåking, A/B-testing og avansert dataanalyse optimaliserer vi kontinuerlig kampanjene. Du får regelmessige, detaljerte rapporter som viser ROI og forbedringsmuligheter.'
+        optimization: {
+          title: 'Optimalisering & Analyse',
+          description: 'Kontinuerlig overvåking og optimalisering av kampanjer for å sikre best mulig resultater og ROI.'
         }
       },
       cta: {
-        title: 'Klar til å Dominere Google Søkeresultater?',
-        subtitle: 'La oss hjelpe deg å fange potensielle kunder på det perfekte øyeblikket når de aktivt søker etter det du tilbyr. Start din reise mot økt synlighet og salg.',
-        button: 'Start Google Ads Reisen Din'
+        title: 'Klar til å Erobre TikTok?',
+        description: 'La oss hjelpe deg å nå en ny generasjon kunder gjennom kreative TikTok-kampanjer.',
+        button: 'Kontakt Oss'
       }
     },
 
-    // SEO Page
-    seo: {
+    // Snapchat Ads Page
+    snapchatAds: {
       hero: {
-        title: 'SEO Tjenester',
-        subtitle: 'Innholdet kommer snart...',
-        cta: 'Kontakt Oss'
+        title: 'Nå Unge Voksne på Snapchat',
+        subtitle: 'Utnytt Snapchats unike AR-teknologi og engasjerende format for å skape minnerike opplevelser som driver merkelojalitet og konverteringer.',
+        cta: 'Start Snapchat-kampanje'
+      },
+      what: {
+        title: 'Hvorfor Snapchat Annonsering?',
+        description: 'Snapchat når over 750 millioner månedlige aktive brukere, hovedsakelig i alderen 13-34 år. Med sine innovative AR-filtre, Discover-innhold og Stories-format tilbyr Snapchat unike muligheter for kreativ markedsføring som engasjerer og konverterer.'
+      },
+      benefits: {
+        title: 'Fordeler med Snapchat Ads',
+        audience: {
+          title: 'Ung Målgruppe',
+          description: 'Nå Gen Z og unge millennials som er kjøpsterke og påvirker trender i markedet.'
+        },
+        ar: {
+          title: 'AR-teknologi',
+          description: 'Bruk Snapchats ledende AR-filtre og linser for å skape interaktive og minnerike merkeopplevelser.'
+        },
+        engagement: {
+          title: 'Høy Engasjement',
+          description: 'Snapchat-brukere er høyt engasjerte og bruker i gjennomsnitt 30+ minutter daglig på plattformen.'
+        },
+        targeting: {
+          title: 'Smart Målretting',
+          description: 'Avanserte målrettingsverktøy inkludert Lookalike Audiences og interesse-basert targeting.'
+        }
+      },
+      process: {
+        title: 'Vår Snapchat Ads Tilnærming',
+        strategy: {
+          title: 'Strategiutvikling',
+          description: 'Vi skaper en omfattende Snapchat-strategi som utnytter plattformens unike funksjoner og målgruppe.'
+        },
+        creative: {
+          title: 'Kreativ Utvikling',
+          description: 'Produksjon av visuelt tiltalende innhold, AR-filtre og interaktive opplevelser som engasjerer brukere.'
+        },
+        optimization: {
+          title: 'Kampanjeoptimalisering',
+          description: 'Kontinuerlig testing og optimalisering for å maksimere kampanjeytelse og ROI på Snapchat.'
+        }
+      },
+      cta: {
+        title: 'Klar til å Snap deg til Suksess?',
+        description: 'La oss hjelpe deg å nå og engasjere unge forbrukere gjennom innovative Snapchat-kampanjer.',
+        button: 'Kontakt Oss'
       }
     },
 
-    // Website Shop Page
-    websiteShop: {
-      hero: {
-        title: 'Nettside & Nettbutikk',
-        subtitle: 'Innholdet kommer snart...',
-        cta: 'Kontakt Oss'
-      }
-    },
+   
+ 
 
     // Footer
     footer: {
-      companyDescription: 'Vi hjelper bedrifter vokse gjennom strategisk digital markedsføring og moderne nettsideløsninger.',
+      companyDescription: 'Vi hjelper bedrifter vokse gjennom strategisk annonsering på sosiale medier.',
       services: {
         title: 'Tjenester',
         metaAds: 'Meta Annonsering',
-        googleAds: 'Google Annonsering',
-        websiteShop: 'Nettside & Nettbutikk',
-        seo: 'SEO'
+        tiktokAds: 'TikTok Annonsering',
+        snapchatAds: 'Snapchat Annonsering'
       },
       company: {
         title: 'Selskap',
         about: 'Om oss',
-        contact: 'Kontakt',
-        allServices: 'Alle tjenester'
+        contact: 'Kontakt'
       },
       contactInfo: {
         title: 'Kontakt'
@@ -376,9 +399,8 @@ export const translations = {
       contact: 'Contact',
       servicesDropdown: {
         metaAds: 'Meta Advertising',
-        googleAds: 'Google Advertising', 
-        websiteShop: 'Website & E-commerce',
-        seo: 'SEO'
+        tiktokAds: 'TikTok Advertising',
+        snapchatAds: 'Snapchat Advertising'
       }
     },
 
@@ -402,19 +424,19 @@ export const translations = {
       services: {
         badge: 'Our Digital Solutions',
         title: 'Digital solutions that drive growth',
-        websiteShop: {
-          title: 'Website & E-commerce',
-          description: 'Do you need a website or e-commerce store, or want to rebuild an existing one? We have the expertise to assist you. Use the button below to read more.',
+        metaAds: {
+          title: 'Meta Advertising',
+          description: 'Reach millions of users on Facebook and Instagram with targeted campaigns that create real results for your business.',
           cta: 'Read More →'
         },
-        digitalMarketing: {
-          title: 'Digital Marketing',
-          description: 'Want to reach potential customers online? Use the button below to read more about how we work to increase visibility and sales.',
+        tiktokAds: {
+          title: 'TikTok Advertising',
+          description: 'Engage Gen Z and millennial markets with creative TikTok campaigns that go viral and drive sales.',
           cta: 'Read More →'
         },
-        seo: {
-          title: 'SEO',
-          description: 'Want to improve your search engine ranking and attract more customers? Use the button below to read more.',
+        snapchatAds: {
+          title: 'Snapchat Advertising',
+          description: 'Leverage Snapchat\'s AR technology and unique format to create memorable experiences that convert.',
           cta: 'Read More →'
         }
       },
@@ -618,102 +640,125 @@ export const translations = {
       }
     },
 
-    // Google Ads Page
-    googleAds: {
+    // TikTok Ads Page
+    tiktokAds: {
       hero: {
-        badge: 'Google Advertising',
-        title: 'Dominate Google Search Results',
-        subtitle: 'Be visible when potential customers actively search for your services. Our Google Ads experts ensure maximum ROI and quality traffic that converts.',
-        cta: 'Get Free Google Ads Analysis'
+        title: 'Reach Gen Z & Millennials on TikTok',
+        subtitle: 'Harness TikTok\'s explosive growth and engaging format to reach millions of active users with creative content that goes viral and drives sales.',
+        cta: 'Start TikTok Campaign'
       },
-      stats: {
-        title: 'Google by Numbers',
-        subtitle: 'Google processes billions of searches daily - be visible when customers actively look for what you offer',
-        stat1: 'Daily Google searches',
-        stat2: 'Search engine market share',
-        stat3: 'Average ROI',
-        stat4: 'Purchase-ready customers click ads'
+      what: {
+        title: 'Why TikTok Advertising?',
+        description: 'TikTok has over 1 billion active users and is the fastest-growing social media platform. With its unique algorithm and engaging video format, TikTok gives businesses the opportunity to reach new audiences in an authentic and creative way.'
       },
-      features: {
-        title: 'Our Google Ads Services',
-        subtitle: 'Complete Google marketing that captures customers when they\'re most ready to buy',
-        search: {
-          title: 'Search Ads',
-          description: 'Targeted text ads that appear when potential customers actively search for your products or services. High purchase intent provides maximum ROI and quality traffic that converts.'
+      benefits: {
+        title: 'Benefits of TikTok Ads',
+        reach: {
+          title: 'Massive Reach',
+          description: 'Reach millions of users on the world\'s fastest-growing platform with content that has the potential to go viral.'
         },
-        shopping: {
-          title: 'Shopping Ads',
-          description: 'Visual product ads with images, prices and product information directly in search results. Perfect for e-commerce and product sales with immediate visual impact.'
+        engagement: {
+          title: 'High Engagement',
+          description: 'TikTok\'s algorithm promotes engaging content, giving your ads better visibility and interaction.'
         },
-        youtube: {
-          title: 'YouTube Ads',
-          description: 'Engaging video ads on the world\'s second largest search engine. From short bumper ads to comprehensive brand stories that create lasting impressions and drive action.'
+        targeting: {
+          title: 'Precise Targeting',
+          description: 'Advanced targeting options based on interests, behavior, demographics and more to reach the right audience.'
         },
-        performance: {
-          title: 'Performance Max',
-          description: 'AI-powered campaigns that automatically optimize messaging, audiences and budget across all Google channels to maximize performance and conversions.'
+        creative: {
+          title: 'Creative Format',
+          description: 'Short-form video content that allows for creative storytelling and authentic brand building.'
         }
       },
       process: {
-        title: 'Our Data-Driven Google Ads Methodology',
-        subtitle: 'A strategic approach that ensures every dollar invested yields maximum returns',
-        step1: {
-          title: 'Comprehensive Keyword & Market Analysis',
-          description: 'We start with in-depth research of search volume, competition and user intent. Through advanced tools, we identify the most profitable keywords and market opportunities your competitors overlook.'
+        title: 'Our TikTok Ads Strategy',
+        strategy: {
+          title: 'Strategy & Planning',
+          description: 'We develop a customized TikTok strategy based on your audience, goals and budget.'
         },
-        step2: {
-          title: 'Strategic Campaign Structure',
-          description: 'We build logical, scalable campaign structures that maximize Quality Score and give you full control over budget allocation. Each campaign is optimized for specific business goals.'
+        content: {
+          title: 'Content Production',
+          description: 'Our creative team produces engaging video content that fits TikTok\'s unique culture and format.'
         },
-        step3: {
-          title: 'Conversion-Optimized Landing Pages',
-          description: 'We ensure your landing pages match the ad message perfectly and are optimized for conversion. This significantly improves both Quality Score and conversion rate.'
-        },
-        step4: {
-          title: 'Continuous Optimization & Reporting',
-          description: 'Through daily monitoring, A/B testing and advanced data analysis, we continuously optimize campaigns. You receive regular, detailed reports showing ROI and improvement opportunities.'
+        optimization: {
+          title: 'Optimization & Analysis',
+          description: 'Continuous monitoring and optimization of campaigns to ensure the best possible results and ROI.'
         }
       },
       cta: {
-        title: 'Ready to Dominate Google Search Results?',
-        subtitle: 'Let us help you capture potential customers at the perfect moment when they actively search for what you offer. Start your journey toward increased visibility and sales.',
-        button: 'Start Your Google Ads Journey'
+        title: 'Ready to Conquer TikTok?',
+        description: 'Let us help you reach a new generation of customers through creative TikTok campaigns.',
+        button: 'Contact Us'
       }
     },
 
-    // SEO Page
-    seo: {
+    // Snapchat Ads Page
+    snapchatAds: {
       hero: {
-        title: 'SEO Services',
-        subtitle: 'Content coming soon...',
-        cta: 'Contact Us'
+        title: 'Reach Young Adults on Snapchat',
+        subtitle: 'Leverage Snapchat\'s unique AR technology and engaging format to create memorable experiences that drive brand loyalty and conversions.',
+        cta: 'Start Snapchat Campaign'
+      },
+      what: {
+        title: 'Why Snapchat Advertising?',
+        description: 'Snapchat reaches over 750 million monthly active users, primarily aged 13-34. With its innovative AR filters, Discover content and Stories format, Snapchat offers unique opportunities for creative marketing that engages and converts.'
+      },
+      benefits: {
+        title: 'Benefits of Snapchat Ads',
+        audience: {
+          title: 'Young Audience',
+          description: 'Reach Gen Z and young millennials who are purchasing-strong and influence market trends.'
+        },
+        ar: {
+          title: 'AR Technology',
+          description: 'Use Snapchat\'s leading AR filters and lenses to create interactive and memorable brand experiences.'
+        },
+        engagement: {
+          title: 'High Engagement',
+          description: 'Snapchat users are highly engaged and spend an average of 30+ minutes daily on the platform.'
+        },
+        targeting: {
+          title: 'Smart Targeting',
+          description: 'Advanced targeting tools including Lookalike Audiences and interest-based targeting.'
+        }
+      },
+      process: {
+        title: 'Our Snapchat Ads Approach',
+        strategy: {
+          title: 'Strategy Development',
+          description: 'We create a comprehensive Snapchat strategy that leverages the platform\'s unique features and audience.'
+        },
+        creative: {
+          title: 'Creative Development',
+          description: 'Production of visually appealing content, AR filters and interactive experiences that engage users.'
+        },
+        optimization: {
+          title: 'Campaign Optimization',
+          description: 'Continuous testing and optimization to maximize campaign performance and ROI on Snapchat.'
+        }
+      },
+      cta: {
+        title: 'Ready to Snap Your Way to Success?',
+        description: 'Let us help you reach and engage young consumers through innovative Snapchat campaigns.',
+        button: 'Contact Us'
       }
     },
 
-    // Website Shop Page
-    websiteShop: {
-      hero: {
-        title: 'Website & E-commerce',
-        subtitle: 'Content coming soon...',
-        cta: 'Contact Us'
-      }
-    },
+
 
     // Footer
     footer: {
-      companyDescription: 'We help businesses grow through strategic digital marketing and modern website solutions.',
+      companyDescription: 'We help businesses grow through strategic social media advertising.',
       services: {
         title: 'Services',
         metaAds: 'Meta Advertising',
-        googleAds: 'Google Advertising',
-        websiteShop: 'Website & E-commerce',
-        seo: 'SEO'
+        tiktokAds: 'TikTok Advertising',
+        snapchatAds: 'Snapchat Advertising'
       },
       company: {
         title: 'Company',
         about: 'About us',
-        contact: 'Contact',
-        allServices: 'All services'
+        contact: 'Contact'
       },
       contactInfo: {
         title: 'Contact'

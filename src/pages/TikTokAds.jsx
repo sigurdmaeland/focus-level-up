@@ -1,4 +1,7 @@
 import { useTranslation } from '../hooks/useTranslation';
+import { FaTiktok } from 'react-icons/fa';
+import { SiTiktok } from 'react-icons/si';
+import { BiLogoTiktok } from 'react-icons/bi';
 import '../styles/Global.css';
 
 export default function TikTokAds() {
@@ -8,12 +11,55 @@ export default function TikTokAds() {
     <div className="page">
       <div className="container">
         {/* Hero Section */}
-        <section className="hero text-center">
-          <h1>{t('tiktokAds.hero.title')}</h1>
-          <p>{t('tiktokAds.hero.subtitle')}</p>
-          <a href="/contact" className="cta-button">
-            {t('tiktokAds.hero.cta')}
-          </a>
+        <section className="hero text-center" style={{ position: 'relative', overflow: 'hidden' }}>
+          {/* TikTok Logo Left */}
+          <div style={{
+            position: 'absolute',
+            left: '5%',
+            top: '25%',
+            transform: 'translateY(-50%)',
+            zIndex: 0,
+            opacity: 0.25
+          }}>
+            <BiLogoTiktok 
+              size={120} 
+              color="#ff0050"
+              style={{
+                filter: 'drop-shadow(0 0 10px rgba(255, 0, 80, 0.3)) blur(1px)'
+              }}
+            />
+          </div>
+          
+          {/* TikTok Logo Right */}
+          <div style={{
+            position: 'absolute',
+            right: '2%',
+            top: '45%',
+            transform: 'translateY(-50%)',
+            zIndex: 0,
+            opacity: 0.25
+          }}>
+            <BiLogoTiktok 
+              size={120} 
+              color="#ff0050"
+              style={{
+                filter: 'drop-shadow(0 0 10px rgba(255, 0, 80, 0.3)) blur(1px)'
+              }}
+            />
+          </div>
+          
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h1>TikTok Annonsering</h1>
+            <p style={{ 
+              color: '#cccccc', 
+              fontSize: '1.2rem', 
+              maxWidth: '800px', 
+              margin: '0 auto',
+              lineHeight: '1.6'
+            }}>
+              Øk din digitale synlighet og nå markedsføringsmålene dine med effektive TikTok-annonser på verdens raskest voksende sosiale plattform. Utnyttt vår ekspertise for å maksimere din annonseringsstrategi.
+            </p>
+          </div>
         </section>
 
         {/* What is TikTok Ads Section */}

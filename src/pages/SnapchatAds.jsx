@@ -1,4 +1,5 @@
 import { useTranslation } from '../hooks/useTranslation';
+import { SiSnapchat } from 'react-icons/si';
 import '../styles/Global.css';
 
 export default function SnapchatAds() {
@@ -8,12 +9,47 @@ export default function SnapchatAds() {
     <div className="page">
       <div className="container">
         {/* Hero Section */}
-        <section className="hero text-center">
-          <h1>{t('snapchatAds.hero.title')}</h1>
-          <p>{t('snapchatAds.hero.subtitle')}</p>
-          <a href="/contact" className="cta-button">
-            {t('snapchatAds.hero.cta')}
-          </a>
+        <section className="hero text-center" style={{ position: 'relative', overflow: 'hidden' }}>
+          {/* Snapchat Logo Left */}
+          <div style={{
+            position: 'absolute',
+            left: '5%',
+            top: '25%',
+            transform: 'translateY(-50%)',
+            zIndex: 0,
+            opacity: 0.3
+          }}>
+            <SiSnapchat 
+              size={120}
+            />
+          </div>
+          
+          {/* Snapchat Logo Right */}
+          <div style={{
+            position: 'absolute',
+            right: '2%',
+            top: '45%',
+            transform: 'translateY(-50%)',
+            zIndex: 0,
+            opacity: 0.3
+          }}>
+            <SiSnapchat 
+              size={120}
+            />
+          </div>
+          
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h1>Snapchat Annonsering</h1>
+            <p style={{ 
+              color: '#cccccc', 
+              fontSize: '1.2rem', 
+              maxWidth: '800px', 
+              margin: '0 auto',
+              lineHeight: '1.6'
+            }}>
+              Øk din digitale synlighet og nå markedsføringsmålene dine med effektive Snapchat-annonser på denne unike og kreative plattformen. Utnyttt vår ekspertise for å maksimere din annonseringsstrategi.
+            </p>
+          </div>
         </section>
 
         {/* What is Snapchat Ads Section */}

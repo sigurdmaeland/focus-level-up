@@ -68,7 +68,7 @@
 
 /* Introduction Section */
 .introduction-section {
-  padding: 100px 0;
+  padding: 70px 0;
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -119,8 +119,8 @@
 }
 
 .image-placeholder {
-  width: 400px;
-  height: 300px;
+  width: 470px;
+  height: 400px;
   background: 
     linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(0, 230, 178, 0.1)),
     rgba(255, 255, 255, 0.05);
@@ -338,8 +338,8 @@
   }
   
   .image-placeholder {
-    width: 280px;
-    height: 180px;
+    width: 98%;
+    height: 300px;
     font-size: 2.5rem;
   }
 
@@ -467,8 +467,8 @@
   }
 
   .image-placeholder {
-    width: 250px;
-    height: 160px;
+    width: 98%;
+    height: 200px;
     font-size: 2rem;
   }
 

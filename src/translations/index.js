@@ -131,7 +131,7 @@ export const translations = {
         badge: 'EN LITEN',
         title: 'Introduksjon',
         text1: 'Velkommen til oss i Focus markedsbyrå! Vi er et dedikert team av innovatører som tror på kraften av teknologi for å transformere virksomheter. Vår lidenskap ligger i å levere skreddersydde løsninger som møter våre kunders unike behov og hjelper dem med å nå sine mål.',
-        text2: 'Med ekspertise innen nettsider og digital markedsføring, jobber vi sammen med våre klienter for å skape effektive løsninger som gir en klar avkastning.'
+        text2: 'Med ekspertise innen digital markedsføring jobber vi sammen med våre klienter for å skape effektive løsninger som gir en klar avkastning.'
       },
       stats: {
         projects: 'Prosjekter',
@@ -507,7 +507,7 @@ export const translations = {
         badge: 'A SMALL',
         title: 'Introduction',
         text1: 'Welcome to Focus marketing agency! We are a dedicated team of innovators who believe in the power of technology to transform businesses. Our passion lies in delivering tailored solutions that meet our clients\' unique needs and help them achieve their goals.',
-        text2: 'With expertise in websites and digital marketing, we work together with our clients to create effective solutions that provide clear returns.'
+        text2: 'With expertise in digital marketing, we work together with our clients to create effective solutions that provide clear returns.'
       },
       stats: {
         projects: 'Projects',

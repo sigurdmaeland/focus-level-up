@@ -269,19 +269,19 @@ export const translations = {
       process: {
         title: 'Vår Prosess',
         step1: {
-          title: '1. Strategiutvikling',
+          title: 'Strategiutvikling',
           description: 'Vi starter med å forstå din bedrift, målgruppe og mål. Basert på dette utvikler vi en skreddersydd TikTok-strategi som maksimerer din ROI.'
         },
         step2: {
-          title: '2. Kreativ Produksjon',
+          title: 'Kreativ Produksjon',
           description: 'Vårt team produserer engasjerende videoinnhold som resonerer med TikToks unike kultur og format, sikrer autentisitet og maksimal engasjement.'
         },
         step3: {
-          title: '3. Kampanjelansering',
+          title: 'Kampanjelansering',
           description: 'Vi setter opp og lanserer dine kampanjer med presis målretting, optimaliserte budsjetter og kontinuerlig overvåking for beste resultater.'
         },
         step4: {
-          title: '4. Optimalisering & Rapportering',
+          title: 'Optimalisering & Rapportering',
           description: 'Gjennom detaljert analyse og kontinuerlig optimalisering sikrer vi at dine TikTok-kampanjer leverer målbare resultater og konstant forbedring.'
         }
       },
@@ -313,19 +313,19 @@ export const translations = {
       process: {
         title: 'Vår Prosess',
         step1: {
-          title: '1. Målgruppeanalyse',
+          title: 'Målgruppeanalyse',
           description: 'Vi kartlegger din ideelle Snapchat-målgruppe og utvikler en strategi som resonerer med plattformens unike kultur og brukeratferd.'
         },
         step2: {
-          title: '2. Kreativ Utvikling',
+          title: 'Kreativ Utvikling',
           description: 'Vårt team skaper visuelt tiltalende og engasjerende innhold som passer perfekt med Snapchats format og estetikk.'
         },
         step3: {
-          title: '3. Kampanjeimplementering',
+          title: 'Kampanjeimplementering',
           description: 'Vi setter opp og lanserer dine Snapchat-kampanjer med optimal målretting, budsjettfordeling og timing for maksimal effekt.'
         },
         step4: {
-          title: '4. Kontinuerlig Optimalisering',
+          title: 'Kontinuerlig Optimalisering',
           description: 'Gjennom løpende analyse og justering sikrer vi at dine Snapchat-annonser leverer sterk ROI og økt merkebevissthet.'
         }
       },
@@ -641,19 +641,19 @@ export const translations = {
       process: {
         title: 'Our Process',
         step1: {
-          title: '1. Strategy Development',
+          title: 'Strategy Development',
           description: 'We start by understanding your business, target audience, and goals. Based on this, we develop a customized TikTok strategy that maximizes your ROI.'
         },
         step2: {
-          title: '2. Creative Production',
+          title: 'Creative Production',
           description: 'Our team produces engaging video content that resonates with TikTok\'s unique culture and format, ensuring authenticity and maximum engagement.'
         },
         step3: {
-          title: '3. Campaign Launch',
+          title: 'Campaign Launch',
           description: 'We set up and launch your campaigns with precise targeting, optimized budgets, and continuous monitoring for the best results.'
         },
         step4: {
-          title: '4. Optimization & Reporting',
+          title: 'Optimization & Reporting',
           description: 'Through detailed analysis and continuous optimization, we ensure your TikTok campaigns deliver measurable results and constant improvement.'
         }
       },
@@ -685,19 +685,19 @@ export const translations = {
       process: {
         title: 'Our Process',
         step1: {
-          title: '1. Target Audience Analysis',
+          title: 'Target Audience Analysis',
           description: 'We map your ideal Snapchat audience and develop a strategy that resonates with the platform\'s unique culture and user behavior.'
         },
         step2: {
-          title: '2. Creative Development',
+          title: 'Creative Development',
           description: 'Our team creates visually appealing and engaging content that fits perfectly with Snapchat\'s format and aesthetics.'
         },
         step3: {
-          title: '3. Campaign Implementation',
+          title: 'Campaign Implementation',
           description: 'We set up and launch your Snapchat campaigns with optimal targeting, budget allocation, and timing for maximum impact.'
         },
         step4: {
-          title: '4. Continuous Optimization',
+          title: 'Continuous Optimization',
           description: 'Through ongoing analysis and adjustment, we ensure your Snapchat ads deliver strong ROI and increased brand awareness.'
         }
       },

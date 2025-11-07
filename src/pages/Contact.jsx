@@ -16,7 +16,11 @@ export default function Contact() {
     message: ''
   });
 
-  // Initialiser EmailJS
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+
   useEffect(() => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     if (publicKey) {
@@ -39,51 +43,90 @@ export default function Contact() {
     { code: '+32', country: 'BE', name: 'Belgia' },
     { code: '+41', country: 'CH', name: 'Sveits' },
   ];
-  
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
 
-  const handleChange = (e) => { 
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: '' });
   };
+
+  const validate = () => {
+  const newErrors = {};
+
+  // Navn
+  const name = formData.name.trim();
+
+// Minimum 2 bokstaver, maksimum 50 tegn totalt
+if (!name) {
+  newErrors.name = 'Navn er påkrevd';
+} else if (name.replace(/[^a-zA-ZæøåÆØÅ]/g, '').length < 2) {
+  newErrors.name = 'Navnet må inneholde minst 2 bokstaver';
+} else if (name.length > 50) {
+  newErrors.name = 'Navnet kan ikke være lengre enn 50 tegn';
+} else if (!/^[a-zA-ZæøåÆØÅ\s'-]+$/.test(name)) {
+  newErrors.name = 'Navnet kan kun inneholde bokstaver, mellomrom, bindestrek eller apostrof';
+}
+
+
+  // E-post
+  if (!formData.email.trim()) {
+    newErrors.email = 'E-post er påkrevd';
+  } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
+    newErrors.email = 'Ugyldig e-postadresse';
+  }
+
+ const phoneRaw = formData.phone.trim();
+const digitsOnly = phoneRaw.replace(/\D/g, ''); // fjerner alt som ikke er sifre
+
+if (!digitsOnly) {
+  newErrors.phone = 'Telefonnummer er påkrevd';
+} else if (digitsOnly.length < 6) {
+  newErrors.phone = 'Telefonnummer må ha minst 6 sifre';
+} else if (digitsOnly.length > 15) {
+  newErrors.phone = 'Telefonnummer kan ikke ha mer enn 15 sifre';
+} else if (!/^\+?\d{6,15}$/.test('+' + digitsOnly)) {
+  newErrors.phone = 'Telefonnummer er ugyldig. Inkluder landskode om nødvendig';
+}
+
+  // Melding
+  if (!formData.message.trim()) {
+    newErrors.message = 'Meldingen kan ikke være tom';
+  } else if (formData.message.trim().length < 3) {
+    newErrors.message = 'Meldingen er for kort';
+  }
+
+  setErrors(newErrors);
+  return Object.keys(newErrors).length === 0;
+};
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoading(true);
     setError('');
 
+    if (!validate()) return;
+
+    setIsLoading(true);
+
     try {
-      // Hent EmailJS-konfigurasjon
       const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const adminTemplateID = import.meta.env.VITE_EMAILJS_ADMIN_TEMPLATE_ID;
       const autoReplyTemplateID = import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-      console.log('--- DEBUG: EmailJS config ---');
-      console.log('Service ID:', serviceID);
-      console.log('Admin Template ID:', adminTemplateID);
-      console.log('Auto-reply Template ID:', autoReplyTemplateID);
-      console.log('Public Key (start):', publicKey?.substring(0,8));
-      console.log('-----------------------------');
 
       if (!serviceID || !adminTemplateID || !autoReplyTemplateID || !publicKey) {
         throw new Error('EmailJS ikke konfigurert. Sjekk .env-filen.');
       }
 
       const adminTemplateParams = {
-  from_name: formData.name,
-  phone: `${formData.countryCode} ${formData.phone}`,
-  message: formData.message,
-  date: new Date().toLocaleString(),
-  reply_to: formData.email // dette er brukerens e-post
-};
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: `${formData.countryCode} ${formData.phone}`,
+        message: formData.message,
+        date: new Date().toLocaleString(),
+        reply_to: formData.email
+      };
 
-
-      // Auto-reply til kunden
       const autoReplyTemplateParams = {
         to_name: formData.name,
         email: formData.email,
@@ -91,61 +134,14 @@ export default function Contact() {
         company_name: 'Focus Level Up'
       };
 
-      // --- DEBUG: logg parametre ---
-      console.log('--- DEBUG: Admin template parameters ---');
-      console.log(adminTemplateParams);
-      console.log('--- DEBUG: Auto-reply template parameters ---');
-      console.log(autoReplyTemplateParams);
-      console.log('----------------------------------------');
-
-      // Send admin-notifikasjon
-      console.log('Sender admin-notifikasjon...');
-      const adminResult = await emailjs.send(
-        serviceID,
-        adminTemplateID,
-        adminTemplateParams,
-        publicKey
-      );
-      console.log('Admin e-post sendt!', adminResult.text);
-
-      // Send auto-reply til kunden
-      console.log('Sender auto-reply til kunde...');
-      const autoReplyResult = await emailjs.send(
-        serviceID,
-        autoReplyTemplateID,
-        autoReplyTemplateParams,
-        publicKey
-      );
-      console.log('Auto-reply sendt!', autoReplyResult.text);
+      await emailjs.send(serviceID, adminTemplateID, adminTemplateParams, publicKey);
+      await emailjs.send(serviceID, autoReplyTemplateID, autoReplyTemplateParams, publicKey);
 
       setIsSubmitted(true);
-
-      setFormData({
-        name: '',
-        email: '',
-        countryCode: '+47',
-        phone: '',
-        message: ''
-      });
-
-    } catch (error) {
-      console.error('Feil ved sending av e-post:', error);
-
-      let errorMessage = 'Noe gikk galt ved sending av meldingen. ';
-      
-      if (error.status === 412) {
-        errorMessage = 'SMTP/EmailJS-konfigurasjonsfeil. Sjekk Service ID, Template ID og e-postinnstillinger.';
-      } else if (error.status === 400) {
-        errorMessage = 'Ugyldig forespørsel. Sjekk at alle felter er fylt ut korrekt.';
-      } else if (error.status === 401) {
-        errorMessage = 'Autorisasjonsfeil. Sjekk EmailJS Public Key.';
-      } else if (error.status === 404) {
-        errorMessage = 'Service eller template ikke funnet. Sjekk EmailJS IDs.';
-      } else {
-        errorMessage += 'Prøv igjen senere eller kontakt oss direkte på contact@focusmarketingagency.no';
-      }
-      
-      setError(errorMessage);
+      setFormData({ name: '', email: '', countryCode: '+47', phone: '', message: '' });
+    } catch (err) {
+      console.error('Feil ved sending av e-post:', err);
+      setError('Noe gikk galt ved sending av meldingen. Prøv igjen senere.');
     } finally {
       setIsLoading(false);
     }
@@ -162,15 +158,9 @@ export default function Contact() {
             </div>
 
             <div className="contact-info-compact">
-              <span className="contact-item-compact">
-                <FaEnvelope /> contact@focusmarketingagency.no
-              </span>
-              <span className="contact-item-compact">
-                <FaPhone /> +47 97405764
-              </span>
-              <span className="contact-item-compact">
-                <FaInstagram /> @focusmarketingagency.no
-              </span>
+              <span className="contact-item-compact"><FaEnvelope /> contact@focusmarketingagency.no</span>
+              <span className="contact-item-compact"><FaPhone /> +47 97405764</span>
+              <span className="contact-item-compact"><FaInstagram /> @focusmarketingagency.no</span>
             </div>
 
             <div className="contact-form-wrapper">
@@ -200,6 +190,7 @@ export default function Contact() {
                       {error}
                     </div>
                   )}
+
                   <div className="form-row">
                     <div className="form-group">
                       <label>{t('contact.form.nameLabel')}</label>
@@ -209,9 +200,9 @@ export default function Contact() {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder={t('contact.form.namePlaceholder')}
-                        required
                         disabled={isLoading}
                       />
+                      {errors.name && <div className="error-message" style={{marginTop:'0.25rem'}}>{errors.name}</div>}
                     </div>
                     <div className="form-group">
                       <label>{t('contact.form.emailLabel')}</label>
@@ -221,9 +212,9 @@ export default function Contact() {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder={t('contact.form.emailPlaceholder')}
-                        required
                         disabled={isLoading}
                       />
+                      {errors.email && <div className="error-message" style={{marginTop:'0.25rem'}}>{errors.email}</div>}
                     </div>
                   </div>
                   
@@ -253,6 +244,7 @@ export default function Contact() {
                         disabled={isLoading}
                       />
                     </div>
+                    {errors.phone && <div className="error-message" style={{marginTop:'0.25rem'}}>{errors.phone}</div>}
                   </div>
                   
                   <div className="form-group">
@@ -263,14 +255,13 @@ export default function Contact() {
                       onChange={handleChange}
                       placeholder={t('contact.form.messagePlaceholder')}
                       rows="5"
-                      required
                       disabled={isLoading}
                     />
+                    {errors.message && <div className="error-message" style={{marginTop:'0.25rem'}}>{errors.message}</div>}
                   </div>
                   
                   <button type="submit" className="send-button" disabled={isLoading}>
-                    <FaPaperPlane />
-                    {isLoading ? 'Sender...' : t('contact.form.submitButton')}
+                    <FaPaperPlane /> {isLoading ? 'Sender...' : t('contact.form.submitButton')}
                   </button>
                 </form>
               )}

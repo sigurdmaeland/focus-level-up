@@ -323,7 +323,7 @@ export default function TikTokAds() {
           `}</style>
             
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #3f454fff, #47bcd3ff)', 
               borderRadius: '15px', 
               padding: '2rem',
               color: 'white',
@@ -348,7 +348,7 @@ export default function TikTokAds() {
             </div>
 
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #47bcd3ff, #3f454fff)', 
               borderRadius: '15px', 
               padding: '2rem',
               color: 'white',
@@ -373,7 +373,7 @@ export default function TikTokAds() {
             </div>
 
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #3f454fff, #47bcd3ff)', 
               borderRadius: '15px', 
               padding: '2rem',
               color: 'white',
@@ -398,7 +398,7 @@ export default function TikTokAds() {
             </div>
 
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #47bcd3ff, #3f454fff)', 
               borderRadius: '15px', 
               padding: '2rem',
               color: 'white',

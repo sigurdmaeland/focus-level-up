@@ -319,7 +319,7 @@ export default function SnapchatAds() {
           `}</style>
             
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #3f454fff, #47bcd3ff)', 
               borderRadius: 'clamp(10px, 2vw, 15px)', 
               padding: 'clamp(1.5rem, 4vw, 2rem)',
               color: 'white',
@@ -352,7 +352,7 @@ export default function SnapchatAds() {
             </div>
 
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #47bcd3ff, #3f454fff)', 
               borderRadius: 'clamp(10px, 2vw, 15px)', 
               padding: 'clamp(1.5rem, 4vw, 2rem)',
               color: 'white',
@@ -385,7 +385,7 @@ export default function SnapchatAds() {
             </div>
 
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #3f454fff, #47bcd3ff)', 
               borderRadius: 'clamp(10px, 2vw, 15px)', 
               padding: 'clamp(1.5rem, 4vw, 2rem)',
               color: 'white',
@@ -418,7 +418,7 @@ export default function SnapchatAds() {
             </div>
 
             <div style={{ 
-              background: 'linear-gradient(135deg, #2a5298, #1e3c72)', 
+              background: 'linear-gradient(135deg, #47bcd3ff, #3f454fff)', 
               borderRadius: 'clamp(10px, 2vw, 15px)', 
               padding: 'clamp(1.5rem, 4vw, 2rem)',
               color: 'white',

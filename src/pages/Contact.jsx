@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaEnvelope, FaPhone, FaInstagram, FaRocket, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaInstagram, FaPaperPlane } from 'react-icons/fa';
 import { useTranslation } from '../hooks/useTranslation';
 import emailjs from '@emailjs/browser';
 import '../styles/Global.css';
@@ -20,14 +20,13 @@ export default function Contact() {
   useEffect(() => {
     const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
     if (publicKey) {
-      emailjs.init(publicKey);
+      emailjs.init({ publicKey });
       console.log('EmailJS initialisert med public key:', publicKey.substring(0, 8) + '...');
     } else {
       console.error('EmailJS Public Key ikke funnet i miljøvariabler');
     }
   }, []);
 
-  // Country codes
   const countryCodes = [
     { code: '+47', country: 'NO', name: 'Norge' },
     { code: '+46', country: 'SE', name: 'Sverige' },
@@ -58,58 +57,69 @@ export default function Contact() {
     setError('');
 
     try {
-      // EmailJS konfigurasjonsvariabler fra .env-filen
+      // Hent EmailJS-konfigurasjon
       const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
       const adminTemplateID = import.meta.env.VITE_EMAILJS_ADMIN_TEMPLATE_ID;
       const autoReplyTemplateID = import.meta.env.VITE_EMAILJS_AUTO_REPLY_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      // Debug: Logg konfigurasjonsverdier (uten å vise hele nøkkelen)
-      console.log('EmailJS Config:', {
-        serviceID: serviceID ? `${serviceID.substring(0, 8)}...` : 'MISSING',
-        adminTemplateID: adminTemplateID ? `${adminTemplateID.substring(0, 8)}...` : 'MISSING',
-        autoReplyTemplateID: autoReplyTemplateID ? `${autoReplyTemplateID.substring(0, 8)}...` : 'MISSING',
-        publicKey: publicKey ? `${publicKey.substring(0, 8)}...` : 'MISSING'
-      });
+      console.log('--- DEBUG: EmailJS config ---');
+      console.log('Service ID:', serviceID);
+      console.log('Admin Template ID:', adminTemplateID);
+      console.log('Auto-reply Template ID:', autoReplyTemplateID);
+      console.log('Public Key (start):', publicKey?.substring(0,8));
+      console.log('-----------------------------');
 
-      // Sjekk om alle nødvendige konfigurasjonsverdier er satt
       if (!serviceID || !adminTemplateID || !autoReplyTemplateID || !publicKey) {
         throw new Error('EmailJS ikke konfigurert. Sjekk .env-filen.');
       }
 
-      // Forbered data for admin e-post
       const adminTemplateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: `${formData.countryCode} ${formData.phone}`,
-        message: formData.message,
-        to_name: 'Focus Level Up Team',
-        reply_to: formData.email
-      };
+  from_name: formData.name,
+  phone: `${formData.countryCode} ${formData.phone}`,
+  message: formData.message,
+  date: new Date().toLocaleString(),
+  reply_to: formData.email // dette er brukerens e-post
+};
 
-      // Forbered data for auto-reply til kunde
+
+      // Auto-reply til kunden
       const autoReplyTemplateParams = {
         to_name: formData.name,
-        email: formData.email, // Matcher {{email}} i templaten
+        email: formData.email,
         customer_name: formData.name,
         company_name: 'Focus Level Up'
       };
 
-      // Send e-post til admin først
+      // --- DEBUG: logg parametre ---
+      console.log('--- DEBUG: Admin template parameters ---');
+      console.log(adminTemplateParams);
+      console.log('--- DEBUG: Auto-reply template parameters ---');
+      console.log(autoReplyTemplateParams);
+      console.log('----------------------------------------');
+
+      // Send admin-notifikasjon
       console.log('Sender admin-notifikasjon...');
-      console.log('Admin template params:', adminTemplateParams);
-      const adminResult = await emailjs.send(serviceID, adminTemplateID, adminTemplateParams, publicKey);
+      const adminResult = await emailjs.send(
+        serviceID,
+        adminTemplateID,
+        adminTemplateParams,
+        publicKey
+      );
       console.log('Admin e-post sendt!', adminResult.text);
 
       // Send auto-reply til kunden
       console.log('Sender auto-reply til kunde...');
-      console.log('Auto-reply template params:', autoReplyTemplateParams);
-      const autoReplyResult = await emailjs.send(serviceID, autoReplyTemplateID, autoReplyTemplateParams, publicKey);
+      const autoReplyResult = await emailjs.send(
+        serviceID,
+        autoReplyTemplateID,
+        autoReplyTemplateParams,
+        publicKey
+      );
       console.log('Auto-reply sendt!', autoReplyResult.text);
-      
+
       setIsSubmitted(true);
-      
-      // Reset form
+
       setFormData({
         name: '',
         email: '',
@@ -120,12 +130,11 @@ export default function Contact() {
 
     } catch (error) {
       console.error('Feil ved sending av e-post:', error);
-      
-      // Spesifikk feilhåndtering basert på EmailJS feilkoder
+
       let errorMessage = 'Noe gikk galt ved sending av meldingen. ';
       
       if (error.status === 412) {
-        errorMessage = 'EmailJS konfigurasjonsfeil. Sjekk at Service ID, Template IDs og Public Key er korrekte.';
+        errorMessage = 'SMTP/EmailJS-konfigurasjonsfeil. Sjekk Service ID, Template ID og e-postinnstillinger.';
       } else if (error.status === 400) {
         errorMessage = 'Ugyldig forespørsel. Sjekk at alle felter er fylt ut korrekt.';
       } else if (error.status === 401) {
@@ -147,13 +156,11 @@ export default function Contact() {
       <section className="contact-section">
         <div className="contact-container">
           <div className="contact-content">
-            {/* Header */}
             <div className="contact-header">
               <h1>{t('contact.hero.title')}</h1>
               <p>{t('contact.hero.description')}</p>
             </div>
 
-            {/* Compact Contact Info */}
             <div className="contact-info-compact">
               <span className="contact-item-compact">
                 <FaEnvelope /> contact@focusmarketingagency.no
@@ -166,7 +173,6 @@ export default function Contact() {
               </span>
             </div>
 
-            {/* Contact Form */}
             <div className="contact-form-wrapper">
               {isSubmitted ? (
                 <div className="success-message">

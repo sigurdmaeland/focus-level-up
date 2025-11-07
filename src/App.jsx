@@ -8,6 +8,7 @@ import TikTokAds from './pages/TikTokAds';
 import SnapchatAds from './pages/SnapchatAds';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

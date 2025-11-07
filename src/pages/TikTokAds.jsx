@@ -255,7 +255,7 @@ export default function TikTokAds() {
             <div className="image-content-tiktok" style={{ padding: '0 1rem' }}>
               {/* Enhanced placeholder for image */}
               <div style={{ 
-                width: '100%', 
+                width: '100%',  
                 height: 'clamp(300px, 50vw, 450px)', 
                 background: 'linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(0, 230, 178, 0.05))',
                 border: '2px dashed rgba(0, 188, 212, 0.4)', 
@@ -272,6 +272,7 @@ export default function TikTokAds() {
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ fontSize: 'clamp(2rem, 6vw, 3rem)', marginBottom: '1rem' }}>📸</div>
                   <p style={{ margin: '0' }}>Bilde kommer her</p>
+                  
                 </div>
                 
                 {/* Decorative elements */}

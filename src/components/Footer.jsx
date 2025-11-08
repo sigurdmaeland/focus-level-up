@@ -57,8 +57,8 @@ export default function Footer() {
               <p>+47 97405764</p>
               <p>contact@focusmarketingagency.no</p>
               <p>
-                Innovasjonsveien 1<br/>
-                0123 Kristiansand
+                Bjørndalssletta 17<br/>
+                4631 Kristiansand
               </p>
             </div>
           </div>

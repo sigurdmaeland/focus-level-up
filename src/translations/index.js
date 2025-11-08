@@ -718,28 +718,28 @@ export const translations = {
     },
 
     // Footer
-    footer: {
-      companyDescription: 'Vi hjelper bedrifter vokse gjennom strategisk annonsering på sosiale medier.',
-      services: {
-        title: 'Tjenester',
-        metaAds: 'Meta Annonsering',
-        tiktokAds: 'TikTok Annonsering',
-        snapchatAds: 'Snapchat Annonsering'
-      },
-      company: {
-        title: 'Selskap',
-        about: 'Om oss',
-        contact: 'Kontakt'
-      },
-      contactInfo: {
-        title: 'Kontakt'
-      },
-      copyright: '© 2025 Focus Level Up. Alle rettigheter reservert.',
-      links: {
-        privacy: 'Personvern',
-        terms: 'Vilkår'
-      }
-    },
+footer: {
+  companyDescription: 'We help businesses grow and thrive through strategic social media advertising.',
+  services: {
+    title: 'Services',
+    metaAds: 'Meta Advertising',
+    tiktokAds: 'TikTok Advertising',
+    snapchatAds: 'Snapchat Advertising'
+  },
+  company: {
+    title: 'Company',
+    about: 'About Us',
+    contact: 'Contact'
+  },
+  contactInfo: {
+    title: 'Contact'
+  },
+  copyright: '© 2025 Focus Level Up. All rights reserved.',
+  links: {
+    privacy: 'Privacy Policy',
+    terms: 'Terms of Service'
+  }
+},
 
     // Common
     common: {

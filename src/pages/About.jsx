@@ -35,7 +35,7 @@ export default function About() {
             </div>
             <div className="intro-image">
               <div className="image-placeholder">
-                <img src="/thomas.png" alt="Thomas" className="intro-image"/>
+                <img src="/thomas.png" alt="Thomas"/>
               </div>
             </div>
           </div>

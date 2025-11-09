@@ -121,6 +121,9 @@ export default function TikTokAds() {
           </div>
         </section>
 
+
+
+
    <section
   className="section"
   style={{
@@ -195,7 +198,7 @@ export default function TikTokAds() {
       <div
         style={{
           width: '100%',
-          height: 'clamp(300px, 50vw, 450px)',
+          height: 'clamp(350px, 50vw, 350px)',
           borderRadius: 'clamp(15px, 3vw, 20px)',
           display: 'flex',
           alignItems: 'center',

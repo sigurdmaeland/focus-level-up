@@ -365,6 +365,49 @@ export const translations = {
       }
     },
 
+
+    privacy: {
+  title: 'Personvernerklæring',
+  intro:
+    'Velkommen til Focus Marketing Agency. Personvernet ditt er svært viktig for oss. Denne personvernerklæringen forklarer hvordan vi samler inn, bruker og beskytter personopplysningene dine når du bruker våre tjenester.',
+  infoTitle: 'Informasjonen vi samler inn',
+  infoText:
+    'Vi samler inn personlig informasjon som navn, e-postadresse og telefonnummer når du kontakter oss eller bruker tjenestene våre. I tillegg samler vi data om hvordan du samhandler med nettstedet vårt for å forbedre brukeropplevelsen.',
+  usageTitle: 'Hvordan vi bruker informasjonen din',
+  usageText:
+    'Informasjonen din hjelper oss å tilby tilpassede tjenester, forbedre markedsføringsstrategiene våre og sikre en smidig brukeropplevelse. Vi deler ikke personopplysningene dine med tredjeparter uten ditt uttrykkelige samtykke.',
+  rightsTitle: 'Dine rettigheter',
+  rightsText:
+    'Du har rett til å få tilgang til, oppdatere eller slette personopplysningene dine når som helst. Hvis du har spørsmål eller ønsker knyttet til dataene dine, kan du ta kontakt med oss.',
+  securityTitle: 'Datasikkerhet',
+  securityText:
+    'Vi bruker robuste sikkerhetstiltak for å beskytte dataene dine mot uautorisert tilgang, endring eller avsløring. Systemene våre oppdateres jevnlig for å sikre høyest mulig sikkerhetsnivå.',
+  contactTitle: 'Kontakt oss',
+  contactText:
+    'Hvis du har spørsmål om denne personvernerklæringen eller hvordan vi håndterer dataene dine, kan du kontakte oss på',
+},
+
+
+ terms: {
+    title: 'Vilkår for bruk',
+    intro:
+      'Velkommen til Focus Level Up. Ved å bruke våre tjenester godtar du å være bundet av disse vilkårene. Les gjennom vilkårene nøye før du bruker nettstedet eller tjenestene våre.',
+    useTitle: 'Bruk av tjenester',
+    useText:
+      'Våre tjenester er utviklet for å hjelpe bedrifter å vokse gjennom strategisk digital markedsføring og annonsering i sosiale medier. Du forplikter deg til å bruke våre tjenester på en ansvarlig og lovlig måte, kun til legitime formål.',
+    ipTitle: 'Immaterielle rettigheter',
+    ipText:
+      'Alt innhold på dette nettstedet – inkludert tekst, grafikk, logoer og media – tilhører Focus Level Up og er beskyttet av gjeldende opphavsretts- og immaterialrettslovgivning. Uautorisert bruk, kopiering eller distribusjon av materialet er strengt forbudt.',
+    liabilityTitle: 'Ansvarsbegrensning',
+    liabilityText:
+      'Focus Level Up er ikke ansvarlig for indirekte, tilfeldige eller følgeskader som oppstår ved bruk av eller manglende evne til å bruke våre tjenester. Selv om vi streber etter høy kvalitet, kan vi ikke garantere spesifikke resultater. Vårt ansvar er begrenset til det som er tillatt etter gjeldende lovverk.',
+    contactTitle: 'Kontakt oss',
+    contactText:
+      'Dersom du har spørsmål om disse vilkårene eller ønsker å diskutere avtalen din med oss, kan du kontakte oss på',
+  },
+
+
+
     // Common
     common: {
       readMore: 'Les mer',
@@ -741,6 +784,48 @@ footer: {
   }
 },
 
+
+privacy: {
+  title: 'Privacy Policy',
+  intro:
+    'Welcome to Focus Marketing Agency. Your privacy is of utmost importance to us. This Privacy Policy explains how we collect, use, and protect your personal information when you interact with our services.',
+  infoTitle: 'Information We Collect',
+  infoText:
+    'We collect personal information such as your name, email address, and phone number when you contact us or use our services. Additionally, we gather data on your interactions with our website to enhance your user experience.',
+  usageTitle: 'How We Use Your Information',
+  usageText:
+    'Your information helps us provide tailored services, improve our marketing strategies, and ensure a seamless user experience. We do not share your personal data with third parties without your explicit consent.',
+  rightsTitle: 'Your Rights',
+  rightsText:
+    'You have the right to access, update, or delete your personal data at any time. If you have any concerns or requests regarding your data, please contact us.',
+  securityTitle: 'Data Security',
+  securityText:
+    'We implement robust security measures to protect your data from unauthorized access, alteration, or disclosure. Our systems are regularly updated to ensure the highest level of security.',
+  contactTitle: 'Contact Us',
+  contactText:
+    'If you have any questions about this Privacy Policy or how we handle your data, feel free to reach out to us at',
+},
+
+
+terms: {
+  title: 'Terms of Service',
+  intro:
+    'Welcome to Focus Level Up. By accessing or using our services, you agree to be bound by these Terms of Service. Please read them carefully before using our website or engaging with our services.',
+  useTitle: 'Use of Services',
+  useText:
+    'Our services are designed to help businesses grow through strategic digital marketing and social media advertising. You agree to use our services responsibly, lawfully, and only for legitimate business purposes.',
+  ipTitle: 'Intellectual Property',
+  ipText:
+    'All content featured on this website — including text, graphics, logos, and media — is the property of Focus Level Up and protected by applicable copyright and intellectual property laws. Unauthorized use, reproduction, or distribution of our materials is strictly prohibited.',
+  liabilityTitle: 'Limitation of Liability',
+  liabilityText:
+    'Focus Level Up shall not be held liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our services. While we strive to maintain high-quality service, we make no guarantees regarding specific business outcomes or performance results. Our liability is limited to the fullest extent permitted by law.',
+  contactTitle: 'Contact Us',
+  contactText:
+    'If you have any questions about these Terms of Service or wish to discuss any part of your agreement with us, please contact our team at',
+},
+
+
     // Common
     common: {
       readMore: 'Les mer',
@@ -751,3 +836,6 @@ footer: {
     }
   }
 };
+
+
+

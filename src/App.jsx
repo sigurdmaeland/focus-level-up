@@ -8,6 +8,8 @@ import TikTokAds from './pages/TikTokAds';
 import SnapchatAds from './pages/SnapchatAds';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/snapchat-ads" element={<SnapchatAds />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} /> 
         </Routes>
         <Footer />
       </Router>

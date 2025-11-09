@@ -78,10 +78,10 @@ export default function Footer() {
             {t('footer.copyright')}
           </p>
           <div style={{ display: 'flex', gap: '2rem' }}>
-            <a href="#" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>
+            <a href="/privacy" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>
               {t('footer.links.privacy')}
             </a>
-            <a href="#" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>
+            <a href="/terms" style={{ color: '#888', textDecoration: 'none', fontSize: '0.9rem' }}>
               {t('footer.links.terms')}
             </a>
           </div>

@@ -204,16 +204,22 @@ export default function TikTokAds() {
           overflow: 'hidden',
         }}
       >
-        <img
-          src="/toktok.jpg"
-          alt="TikTok Ads"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            borderRadius: 'inherit',
-          }}
-        />
+       <img
+  src="/toktok.jpg"
+  alt="TikTok Ads"
+  style={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    borderRadius: 'inherit',
+    display: 'block', // Sikrer at bildet vises som en blokk
+    maxWidth: '100%', // Hindrer overskridelse av containerens bredde
+    maxHeight: '100%', // Hindrer overskridelse av containerens høyde
+  }}
+  onError={(e) => {
+    e.target.src = '/logo1.png'; // Fallback-bilde hvis toktok.jpg ikke lastes
+  }}
+/>
       </div>
     </div>
   </div>

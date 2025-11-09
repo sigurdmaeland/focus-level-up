@@ -121,114 +121,114 @@ export default function TikTokAds() {
           </div>
         </section>
 
-        <section
-          className="section"
-          style={{
-            marginTop: 'clamp(3rem, 8vw, 6rem)',
-            padding: 'clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)',
-            background: 'linear-gradient(135deg, rgba(42, 82, 152, 0.05), rgba(255, 0, 80, 0.03))',
-          }}
-        >
-          <div
-            className="content-wrapper-tiktok"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: 'clamp(2rem, 6vw, 5rem)',
-              maxWidth: '1200px',
-              margin: '0 auto',
-            }}
-          >
-            <style>{`
+
+
+
+   <section
+  className="section"
+  style={{
+    marginTop: 'clamp(3rem, 8vw, 6rem)',
+    padding: 'clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)',
+    background: 'linear-gradient(135deg, rgba(42, 82, 152, 0.05), rgba(255, 0, 80, 0.03))',
+  }}
+>
+  <div
+    className="content-wrapper-tiktok"
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center', // Sentrert på mobil
+      gap: 'clamp(2rem, 6vw, 5rem)',
+      maxWidth: '1200px',
+      margin: '0 auto',
+    }}
+  >
+    <style>{`
       @media (min-width: 768px) {
         .content-wrapper-tiktok { 
           flex-direction: row !important; 
-          align-items: center !important; 
+          align-items: center !important; /* Vertikalt sentrert */
           gap: clamp(2rem, 5vw, 4rem) !important; 
         }
         .text-content-tiktok {
-          text-align: left !important;
+          text-align: left !important; /* Venstrejuster teksten */
         }
       }
 
       @media (max-width: 767px) {
         .text-content-tiktok {
-          text-align: center !important;
-        }
-        .image-content-tiktok img {
-          width: 100% !important;
-          height: auto !important;
-          object-fit: contain !important;
+          text-align: center !important; /* Sentrer på mobil */
         }
       }
     `}</style>
 
-            {/* Tekst */}
-            <div className="text-content-tiktok" style={{ textAlign: 'center', flex: 1 }}>
-              <h2
-                style={{
-                  marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)',
-                  fontSize: 'clamp(1.8rem, 5vw, 2.5rem)',
-                  background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
-                  backgroundClip: 'text',
-                  padding: '0 1rem',
-                }}
-              >
-                {t('tiktokAds.why.title')}
-              </h2>
-              <p
-                style={{
-                  color: '#e0e0e0',
-                  fontSize: 'clamp(1rem, 3vw, 1.15rem)',
-                  lineHeight: '1.8',
-                  marginBottom: 'clamp(1rem, 3vw, 2rem)',
-                  fontWeight: 400,
-                  maxWidth: '800px',
-                  margin: '0 auto',
-                  padding: '0 1rem',
-                }}
-              >
-                {t('tiktokAds.why.description')}
-              </p>
-            </div>
+    {/* Tekst */}
+    <div className="text-content-tiktok" style={{ textAlign: 'center', flex: 1 }}>
+      <h2
+        style={{
+          marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)',
+          fontSize: 'clamp(1.8rem, 5vw, 2.5rem)',
+          background: 'linear-gradient(135deg, #00bcd4, #00e6b2)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          padding: '0 1rem',
+        }}
+      >
+        {t('tiktokAds.why.title')}
+      </h2>
+      <p
+        style={{
+          color: '#e0e0e0',
+          fontSize: 'clamp(1rem, 3vw, 1.15rem)',
+          lineHeight: '1.8',
+          marginBottom: 'clamp(1rem, 3vw, 2rem)',
+          fontWeight: 400,
+          maxWidth: '800px',
+          margin: '0 auto',
+          padding: '0 1rem',
+        }}
+      >
+        {t('tiktokAds.why.description')}
+      </p>
+    </div>
 
-            {/* Bilde */}
-            <div className="image-content-tiktok" style={{ flex: 1, padding: '0 1rem' }}>
-              <div
-                style={{
-                  width: '100%',
-                  height: 'clamp(350px, 50vw, 350px)',
-                  borderRadius: 'clamp(15px, 3vw, 20px)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  position: 'relative',
-                  overflow: 'hidden',
-                }}
-              >
-                <img
-                  src="/toktok.jpg"
-                  alt="TikTok Ads"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'contain',
-                    borderRadius: 'inherit',
-                    display: 'block',
-                    maxWidth: '100%',
-                    maxHeight: '100%',
-                  }}
-                  onError={(e) => {
-                    e.target.src = '/logo1.png';
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
+    {/* Bilde */}
+    <div className="image-content-tiktok" style={{ flex: 1, padding: '0 1rem' }}>
+      <div
+        style={{
+          width: '100%',
+          height: 'clamp(350px, 50vw, 350px)',
+          borderRadius: 'clamp(15px, 3vw, 20px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
+      >
+      <img
+  src="/toktok.jpg"
+  alt="TikTok Ads"
+  style={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'contain', // Sørger for at hele bildet vises
+    borderRadius: 'inherit',
+    display: 'block',
+    maxWidth: '100%',
+    maxHeight: '100%',
+  }}
+  onError={(e) => {
+    e.target.src = '/logo1.png'; // Fallback-bilde hvis toktok.jpg ikke lastes
+  }}
+/>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
         {/* Process Section */}
         <section className="section" style={{ padding: '0 1rem', marginTop: 'clamp(3rem, 8vw, 5rem)' }}>

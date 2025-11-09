@@ -43,7 +43,7 @@
 .contact-info-compact {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   margin-bottom: 25px;
   flex-wrap: wrap;
 }

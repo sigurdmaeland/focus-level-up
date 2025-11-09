@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CookieConsent from './components/CookieConsent'; // Importer biblioteket
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -31,6 +32,7 @@ function App() {
           <Route path="/terms" element={<Terms />} /> 
         </Routes>
         <Footer />
+        <CookieConsent/>
       </Router>
     </>
   )

@@ -208,7 +208,7 @@ export default function TikTokAds() {
         }}
       >
       <img
-  src="/toktok.jpg"
+  src="/toktok.png"
   alt="TikTok Ads"
   style={{
     width: '100%',

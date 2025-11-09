@@ -64,12 +64,12 @@ export const translations = {
           company: 'CEO, TechFlow AS'
         },
         testimonial2: {
-          text: 'Profesjonell service og utrolige resultater. Vår nettbutikk økte salget med 250% etter deres optimalisering.',
+          text: 'Profesjonell service og utrolige resultater. Våre annonser genererte betydelig mer trafikk og flere konkrete kundehenvendelser enn forventet.',
           author: 'Maria Johnsen',
           company: 'Gründer, StyleHub'
         },
         testimonial3: {
-          text: 'Fantastisk team! De tok vår lokale bedrift fra 0 til 100K månedlige besøkende på Google.',
+          text: 'Veldig fornøyd med samarbeidet! De hjalp oss med annonser på Instagram og Snapchat, og vi så en tydelig økning i antall henvendelser fra kunder.',
           author: 'Andreas Berg',
           company: 'Daglig leder, Bergs Bygg'
         }
@@ -483,12 +483,12 @@ export const translations = {
           company: 'CEO, TechFlow AS'
         },
         testimonial2: {
-          text: 'Professional service and incredible results. Our e-commerce store increased sales by 250% after their optimization.',
+          text: 'Professional service and incredible results. Our ads generated significantly more traffic and customer inquiries than expected.',
           author: 'Maria Johnsen',
           company: 'Founder, StyleHub'
         },
         testimonial3: {
-          text: 'Fantastic team! They took our local business from 0 to 100K monthly visitors on Google.',
+          text: 'Very satisfied with the collaboration! They helped us with our ads, and we saw a clear increase in customer inquiries.',
           author: 'Andreas Berg',
           company: 'General Manager, Bergs Bygg'
         }

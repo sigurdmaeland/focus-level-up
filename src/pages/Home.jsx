@@ -266,27 +266,7 @@ export default function Home() {
           </div>
           
           <div className="testimonials-grid">
-            <div className="testimonial-card">
-              <div className="testimonial-content">
-                <div className="stars">
-                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-                </div>
-                <p>
-                  "{t('home.testimonials.testimonial1.text')}"
-                </p>
-              </div>
-              <div className="testimonial-author">
-                <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-                  alt={t('home.testimonials.testimonial1.author')}
-                />
-                <div>
-                  <strong>{t('home.testimonials.testimonial1.author')}</strong>
-                  <span>{t('home.testimonials.testimonial1.company')}</span>
-                </div>
-              </div>
-            </div>
-
+            {/* Midtre boksen flyttet til venstre */}
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <div className="stars">
@@ -309,7 +289,10 @@ export default function Home() {
                   fontWeight: 'bold',
                   fontSize: '1.2rem'
                 }}>
-                  👩‍💼
+                  <img 
+                    src="https://plus.unsplash.com/premium_photo-1661589856899-6dd0871f9db6?fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydHJhaXQlMjBidXNpbmVzcyUyMHdvbWFufGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000"
+                    alt="Aisha Patel, Co-founder & CTO, LumenWorks LLC"
+                  />
                 </div>
                 <div>
                   <strong>{t('home.testimonials.testimonial2.author')}</strong>
@@ -318,6 +301,29 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Venstre boksen flyttet til midten */}
+            <div className="testimonial-card">
+              <div className="testimonial-content">
+                <div className="stars">
+                  <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+                </div>
+                <p>
+                  "{t('home.testimonials.testimonial1.text')}"
+                </p>
+              </div>
+              <div className="testimonial-author">
+                <img 
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                  alt={t('home.testimonials.testimonial1.author')}
+                />
+                <div>
+                  <strong>{t('home.testimonials.testimonial1.author')}</strong>
+                  <span>{t('home.testimonials.testimonial1.company')}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Høyre boksen forblir uendret */}
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <div className="stars">

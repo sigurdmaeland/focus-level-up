@@ -36,16 +36,16 @@ const CookieConsent = () => {
       {isVisible && (
         <div style={{
           position: 'fixed',
-          top: '50%',
+          bottom: '10px',
           left: '50%',
-          transform: 'translate(-50%, -50%)',
+          transform: 'translateX(-50%)',
           background: '#0D1117',
           color: '#C9D1D9',
           padding: '35px',
           boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
           borderRadius: '10px',
           zIndex: 1000,
-          maxWidth: '550px',
+          maxWidth: '650px',
           textAlign: 'center',
         }}>
           <p style={{ margin: '0 0 20px', fontSize: '16px', lineHeight: '1.6' }}>

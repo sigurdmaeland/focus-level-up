@@ -1,5 +1,3 @@
-/* About Page - Now uses Global.css .page background */
-
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -118,33 +116,17 @@
   align-items: center;
 }
 
-.image-placeholder {
-  width: 470px;
-  height: 450px;
-  background: 
-    linear-gradient(135deg, rgba(0, 188, 212, 0.1), rgba(0, 230, 178, 0.1)),
-    rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-  color: rgba(0, 188, 212, 0.3);
-  backdrop-filter: blur(10px);
-
-  /* 👇 Disse tre linjene er nye */
-  position: relative;
-  overflow: hidden; /* Hindrer at bildet går utenfor rammen */
-}
-
-.image-placeholder img {
+.intro-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Fyll rammen uten å forvrenge bildet */
-  border-radius: 20px; /* Matcher rammen */
-  display: block;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 /* Stats */
@@ -349,12 +331,14 @@
     font-size: 1rem;
     margin-bottom: 15px;
   }
-  
-  .image-placeholder {
-    width: 98%;
-    height: 400px;
-    font-size: 2.5rem;
+
+ 
+  .intro-image img {
+    max-width: 98%;
+    border-radius: 12px;
   }
+  
+  
 
   /* Stats */
   .about-stats {
@@ -479,11 +463,7 @@
     font-size: 0.95rem;
   }
 
-  .image-placeholder {
-    width: 98%;
-    height: 200px;
-    font-size: 2rem;
-  }
+  
 
   /* Stats */
   .stats-grid {

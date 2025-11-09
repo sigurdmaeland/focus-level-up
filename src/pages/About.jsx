@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FaRocket, FaUsers, FaLightbulb, FaCamera, FaPalette } from 'react-icons/fa';
 import { useTranslation } from '../hooks/useTranslation';
 import '../styles/Global.css';
+import '../styles/About.css';
 
 export default function About() {
   const { t } = useTranslation();
@@ -19,27 +20,27 @@ export default function About() {
       </section>
 
       {/* Introduction Section */}
-      <section className="introduction-section">
-        <div className="about-container">
-          <div className="intro-content">
-            <div className="intro-text">
-              <span className="intro-badge">{t('about.introduction.badge')}</span>
-              <h2>{t('about.introduction.title')}</h2>
-              <p>
-                {t('about.introduction.text1')}
-              </p>
-              <p>
-                {t('about.introduction.text2')}
-              </p>
-            </div>
-            <div className="intro-image">
-              <div className="image-placeholder">
-                <img src="/thomas.png" alt="Thomas"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="introduction-section">
+  <div className="about-container">
+    <div className="intro-content">
+      
+      {/* Tekstdel */}
+      <div className="intro-text">
+        <span className="intro-badge">{t('about.introduction.badge')}</span>
+        <h2>{t('about.introduction.title')}</h2>
+        <p>{t('about.introduction.text1')}</p>
+        <p>{t('about.introduction.text2')}</p>
+      </div>
+
+      {/* Bildedel */}
+      <div className="intro-image">
+        <img src="/thomas.png" alt="Thomas" loading="lazy" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       {/* Stats */}
       <section className="about-stats">

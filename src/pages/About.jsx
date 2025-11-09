@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { FaRocket, FaUsers, FaLightbulb, FaCamera, FaPalette } from 'react-icons/fa';
 import { useTranslation } from '../hooks/useTranslation';
 import '../styles/Global.css';
-import '../styles/About.css';
 
 export default function About() {
   const { t } = useTranslation();

@@ -36,9 +36,9 @@ const CookieConsent = () => {
       {isVisible && (
         <div style={{
           position: 'fixed',
-          bottom: '30px',
+          top: '50%',
           left: '50%',
-          transform: 'translateX(-50%)',
+          transform: 'translate(-50%, -50%)',
           background: '#0D1117',
           color: '#C9D1D9',
           padding: '35px',

@@ -197,42 +197,42 @@
 
 .feature-card {
   padding: 3rem 2.5rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #3f454fff, #47bcd3ff);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   transition: all 0.3s ease;
+  color: #ffffff;
+  position: relative;
 }
 
-.feature-card:hover {
-  transform: translateY(-5px);
-  background: rgba(0, 188, 212, 0.03);
-  border-color: rgba(0, 188, 212, 0.2);
+
+
+/* 💡 Snur gradienten for boksene på høyre side (nr. 2 og 4) */
+.features-grid .feature-card:nth-child(2),
+.features-grid .feature-card:nth-child(4) {
+  background: linear-gradient(135deg, #47bcd3ff, #3f454fff);
 }
 
-.feature-icon {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, #00bcd4, #00e6b6);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-}
+
 
 .feature-card h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
   color: #ffffff;
 }
 
 .feature-card p {
-  color: #cccccc;
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
-  font-size: 1rem;
 }
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
 
 /* Process Section */
 .ads-process {

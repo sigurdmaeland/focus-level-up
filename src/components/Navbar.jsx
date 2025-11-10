@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../hooks/useTranslation';
 import styles from './Navbar.module.css';
+import '../styles/Global.css';
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);

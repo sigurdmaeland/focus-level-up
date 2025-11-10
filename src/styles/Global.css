@@ -238,3 +238,16 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

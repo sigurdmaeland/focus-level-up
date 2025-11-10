@@ -475,27 +475,4 @@ body.mobile-menu-open {
 }
 
 
-/* Fjern turkis border ved klikk i Chrome/Brave */
-.navLink:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
 
-.navLink:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-.dropdownItem:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}
-
-.dropdownItem:focus-visible {
-  outline: none !important;
-  box-shadow: none !important;
-  border: none !important;
-}

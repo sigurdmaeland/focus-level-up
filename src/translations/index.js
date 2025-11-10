@@ -198,7 +198,7 @@ export const translations = {
       },
       stats: {
         title: 'Meta i Tall',
-        subtitle: 'Meta-plattformene gir deg tilgang til den største og mest engasjerte brukerbasem globalt - her er din målgruppe allerede aktiv',
+        subtitle: 'Meta-plattformene gir deg tilgang til den største og mest engasjerte brukerbasen globalt - her er din målgruppe allerede aktiv',
         stat1: 'Månedlige aktive brukere',
         stat2: 'Instagram brukere daglig',
         stat3: 'Gjennomsnittlig ROAS',
@@ -550,7 +550,7 @@ export const translations = {
         title: 'Learn a bit about us',
         subtitle: 'We transform digital dreams into reality through strategic marketing and creative execution.'
       },
-      
+
       introduction: {
       badge: 'A SHORT',
       title: 'Introduction',

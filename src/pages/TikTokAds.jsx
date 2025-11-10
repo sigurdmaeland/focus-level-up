@@ -124,46 +124,60 @@ export default function TikTokAds() {
 
 
 
-   <section
+   {/* Why Run Ads Section – TikTok */}
+<section
   className="section"
   style={{
     marginTop: 'clamp(3rem, 8vw, 6rem)',
     padding: 'clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem)',
-    background: 'linear-gradient(135deg, rgba(42, 82, 152, 0.05), rgba(255, 0, 80, 0.03))',
+    background:
+      'linear-gradient(135deg, rgba(42, 82, 152, 0.05), rgba(0, 255, 200, 0.03))',
   }}
 >
   <div
-    className="content-wrapper-tiktok"
+    className="content-wrapper"
     style={{
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center', // Sentrert på mobil
+      alignItems: 'center',
       gap: 'clamp(2rem, 6vw, 5rem)',
       maxWidth: '1200px',
       margin: '0 auto',
     }}
   >
     <style>{`
-      @media (min-width: 768px) {
-        .content-wrapper-tiktok { 
-          flex-direction: row !important; 
-          align-items: center !important; /* Vertikalt sentrert */
-          gap: clamp(2rem, 5vw, 4rem) !important; 
-        }
-        .text-content-tiktok {
-          text-align: left !important; /* Venstrejuster teksten */
-        }
+      .content-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
       }
-
-      @media (max-width: 767px) {
-        .text-content-tiktok {
-          text-align: center !important; /* Sentrer på mobil */
+      .text-content {
+        width: 100% !important;
+        text-align: center !important;
+      }
+      .image-content {
+        width: 100% !important;
+        max-width: 600px !important;
+      }
+      @media (min-width: 768px) {
+        .content-wrapper {
+          flex-direction: row !important;
+          align-items: center !important;
+          gap: 5rem !important;
+        }
+        .text-content {
+          flex: 1 !important;
+          text-align: left !important;
+        }
+        .image-content {
+          flex: 1 !important;
+          max-width: none !important;
         }
       }
     `}</style>
 
     {/* Tekst */}
-    <div className="text-content-tiktok" style={{ textAlign: 'center', flex: 1 }}>
+    <div className="text-content">
       <h2
         style={{
           marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)',
@@ -183,7 +197,7 @@ export default function TikTokAds() {
           fontSize: 'clamp(1rem, 3vw, 1.15rem)',
           lineHeight: '1.8',
           marginBottom: 'clamp(1rem, 3vw, 2rem)',
-          fontWeight: 400,
+          fontWeight: '400',
           maxWidth: '800px',
           margin: '0 auto',
           padding: '0 1rem',
@@ -194,11 +208,11 @@ export default function TikTokAds() {
     </div>
 
     {/* Bilde */}
-    <div className="image-content-tiktok" style={{ flex: 1, padding: '0 1rem' }}>
+    <div className="image-content" style={{ padding: '0 1rem' }}>
       <div
         style={{
           width: '100%',
-          height: 'clamp(350px, 50vw, 350px)',
+          height: 'clamp(300px, 50vw, 450px)',
           borderRadius: 'clamp(15px, 3vw, 20px)',
           display: 'flex',
           alignItems: 'center',
@@ -207,26 +221,53 @@ export default function TikTokAds() {
           overflow: 'hidden',
         }}
       >
-      <img
-  src="/toktok.png"
-  alt="TikTok Ads"
-  style={{
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain', // Sørger for at hele bildet vises
-    borderRadius: 'inherit',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-  }}
-  onError={(e) => {
-    e.target.src = '/logo1.png'; // Fallback-bilde hvis toktok.jpg ikke lastes
-  }}
-/>
+        <img
+          src="/toktok.png"
+          alt="TikTok Ads illustrasjon"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            filter: 'brightness(75%)',
+            borderRadius: 'inherit',
+          }}
+          onError={(e) => {
+            e.target.src = '/logo1.png'; // Fallback
+          }}
+        />
+
+        {typeof window !== 'undefined' && window.innerWidth > 768 && (
+          <>
+            <div
+              style={{
+                position: 'absolute',
+                top: '-10px',
+                right: '-10px',
+                width: 'clamp(40px, 8vw, 60px)',
+                height: 'clamp(40px, 8vw, 60px)',
+                background: 'rgba(0, 230, 178, 0.1)',
+                borderRadius: '50%',
+              }}
+            ></div>
+
+            <div
+              style={{
+                position: 'absolute',
+                bottom: '-15px',
+                left: '-15px',
+                width: 'clamp(50px, 10vw, 80px)',
+                height: 'clamp(50px, 10vw, 80px)',
+                background: 'rgba(42, 82, 152, 0.1)',
+                borderRadius: '50%',
+              }}
+            ></div>
+          </>
+        )}
       </div>
     </div>
   </div>
 </section>
+
 
 
 

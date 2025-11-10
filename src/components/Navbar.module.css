@@ -475,4 +475,12 @@ body.mobile-menu-open {
 }
 
 
-
+/* Fjern turkis border ved klikk i Chrome/Brave */
+.navLink:focus,
+.navLink:focus-visible,
+.dropdownItem:focus,
+.dropdownItem:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

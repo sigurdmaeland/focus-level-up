@@ -75,39 +75,40 @@ export const translations = {
         }
       },
       faq: {
-        badge: 'FAQ',
-        title: 'Ofte Stilte Spørsmål',
-        questions: [
-          {
-            question: 'Hvilke digitale markedsføringstjenester tilbyr dere?',
-            answer: 'Vi spesialiserer oss på et bredt spekter av tjenester, inkludert søkemotoroptimalisering (SEO), betalt per klikk-annonsering (PPC), sosiale medier-markedsføring, innholdsmarkedsføring, design og optimalisering av nettsider.'
-          },
-          {
-            question: 'Hvordan kan et digitalt markedsføringsbyrå hjelpe min bedrift?',
-            answer: 'Et digitalt markedsføringsbyrå kan hjelpe din bedrift med å øke synlighet online, nå målgruppen mer effektivt, generere flere kvalifiserte leads og øke salget gjennom strategisk bruk av digitale kanaler.'
-          },
-          {
-            question: 'Hvordan tilpasser dere strategiene for ulike bransjer?',
-            answer: 'Vi gjennomfører grundige analyser av hver bransje og bedrift for å forstå målgruppen, konkurrentene og markedsdynamikken. Dette gjør det mulig å utvikle skreddersydde strategier som er optimalisert for din spesifikke situasjon.'
-          },
-          {
-            question: 'Kan et digitalt markedsføringsbyrå hjelpe med å forbedre nettside SEO?',
-            answer: 'Ja, SEO er en av våre kjernekompetanser. Vi optimaliserer nettsider for søkemotorer gjennom teknisk SEO, innholdsoptimalisering, søkeordforskning og linkbuilding for å forbedre din rangering i Google.'
-          },
-          {
-            question: 'Hva er PPC-annonsering og hvordan kan det hjelpe min bedrift?',
-            answer: 'PPC (Pay-Per-Click) er betalt annonsering hvor du betaler kun når noen klikker på annonsen din. Dette gir umiddelbare resultater, målrettet reach og full kontroll over budsjettet, noe som gjør det perfekt for å drive kvalifisert trafikk til nettsiden din.'
-          },
-          {
-            question: 'Hvordan måler dere suksessen til en digital markedsføringskampanje?',
-            answer: 'Vi bruker detaljerte analyser og KPI-er som konverteringsrate, ROI, trafikk, engagement og salg. Vi leverer regelmessige rapporter som viser hvordan kampanjene presterer i forhold til dine forretningsmål.'
-          },
-          {
-            question: 'Hva gjør deres digitale markedsføringsbyrå unikt sammenlignet med konkurrentene?',
-            answer: 'Vi kombinerer dataanalyse med kreativ tilnærming og har dyptgående kunnskap om norske og internasjonale markeder. Vårt team har lang erfaring og vi fokuserer på langsiktige partnerskap med våre kunder for å sikre vedvarende vekst.'
-          }
-        ]
-      },
+      badge: 'FAQ',
+      title: 'Ofte stilte spørsmål',
+      questions: [
+        {
+          question: 'Hvilke annonsetjenester tilbyr dere?',
+          answer: 'Vi jobber med annonsering på Meta (Facebook og Instagram), TikTok og Snapchat. Målet vårt er å hjelpe bedrifter med å nå riktig målgruppe og skape vekst gjennom målrettede og kreative kampanjer.'
+        },
+        {
+          question: 'Hvordan kan annonsering på sosiale medier hjelpe min bedrift?',
+          answer: 'Annonsering i sosiale medier gir deg muligheten til å nå potensielle kunder der de bruker mest tid. Vi hjelper deg med å øke synligheten, bygge merkevaren og skape salg gjennom presise og datadrevne strategier.'
+        },
+        {
+          question: 'Tilpasser dere kampanjer for ulike bransjer?',
+          answer: 'Ja. Hver kampanje tilpasses ut fra bransje, målgruppe og budsjett. Vi analyserer markedet og setter opp en strategi som passer din bedrift og dine mål.'
+        },
+        {
+          question: 'Hva er forskjellen mellom Meta Ads, TikTok Ads og Snapchat Ads?',
+          answer: 'Meta Ads passer godt for bred rekkevidde og synlighet, TikTok Ads fungerer best for kreative videoer og engasjement, mens Snapchat Ads treffer yngre målgrupper raskt og effektivt.'
+        },
+        {
+          question: 'Hvordan måler dere resultatene av kampanjene?',
+          answer: 'Vi følger med på nøkkeltall som klikkrate, kostnad per konvertering, avkastning på annonseforbruk og engasjement. Du får tydelige rapporter som viser hvordan kampanjene presterer.'
+        },
+        {
+          question: 'Hvor raskt kan jeg forvente resultater?',
+          answer: 'De fleste ser resultater i løpet av få dager til et par uker etter kampanjestart. Vi optimaliserer løpende for å sikre best mulig effekt.'
+        },
+        {
+          question: 'Hva skiller dere fra andre byråer?',
+          answer: 'Vi kombinerer kreativt innhold med presis målretting og kontinuerlig optimalisering. Hos oss får du en partner som er opptatt av resultatene dine og langsiktig vekst.'
+        }
+      ]
+    },
+
       cta: {
         title: 'Klar for å ta din bedrift til neste nivå?',
         description: 'La oss vise deg hvordan vi kan hjelpe din bedrift med å vokse. Få en gratis konsultasjon og se mulighetene.',
@@ -493,40 +494,42 @@ export const translations = {
           company: 'General Manager, Bergs Bygg'
         }
       },
+      
       faq: {
-        badge: 'FAQ',
-        title: 'Frequently Asked Questions',
-        questions: [
-          {
-            question: 'What digital marketing services do you offer?',
-            answer: 'We specialize in a wide range of services, including search engine optimization (SEO), pay-per-click advertising (PPC), social media marketing, content marketing, website design and optimization.'
-          },
-          {
-            question: 'How can a digital marketing agency help my business?',
-            answer: 'A digital marketing agency can help your business increase online visibility, reach your target audience more effectively, generate more qualified leads and increase sales through strategic use of digital channels.'
-          },
-          {
-            question: 'How do you customize strategies for different industries?',
-            answer: 'We conduct thorough analyses of each industry and business to understand the target audience, competitors and market dynamics. This enables us to develop tailored strategies that are optimized for your specific situation.'
-          },
-          {
-            question: 'Can a digital marketing agency help improve website SEO?',
-            answer: 'Yes, SEO is one of our core competencies. We optimize websites for search engines through technical SEO, content optimization, keyword research and link building to improve your ranking on Google.'
-          },
-          {
-            question: 'What is PPC advertising and how can it help my business?',
-            answer: 'PPC (Pay-Per-Click) is paid advertising where you only pay when someone clicks on your ad. This provides immediate results, targeted reach and full budget control, making it perfect for driving qualified traffic to your website.'
-          },
-          {
-            question: 'How do you measure the success of a digital marketing campaign?',
-            answer: 'We use detailed analytics and KPIs such as conversion rate, ROI, traffic, engagement and sales. We provide regular reports showing how campaigns perform in relation to your business goals.'
-          },
-          {
-            question: 'What makes your digital marketing agency unique compared to competitors?',
-            answer: 'We combine data analysis with creative approach and have in-depth knowledge of Norwegian and international markets. Our team has extensive experience and we focus on long-term partnerships with our customers to ensure sustainable growth.'
-          }
-        ]
-      },
+      badge: 'FAQ',
+      title: 'Frequently Asked Questions',
+      questions: [
+        {
+          question: 'What advertising services do you offer?',
+          answer: 'We work with advertising on Meta (Facebook and Instagram), TikTok and Snapchat. Our goal is to help businesses reach the right audience and grow through targeted and creative campaigns.'
+        },
+        {
+          question: 'How can social media advertising help my business?',
+          answer: 'Advertising on social media lets you reach potential customers where they spend most of their time. We help increase visibility, build brand awareness and drive sales through well-structured campaigns.'
+        },
+        {
+          question: 'Do you tailor campaigns for different industries?',
+          answer: 'Yes. Every campaign is customized based on your industry, audience and budget. We analyze your market and create a strategy that fits your goals and business.'
+        },
+        {
+          question: 'What is the difference between Meta Ads, TikTok Ads and Snapchat Ads?',
+          answer: 'Meta Ads are great for reach and visibility, TikTok Ads are ideal for creative video engagement, and Snapchat Ads are effective for reaching younger audiences quickly.'
+        },
+        {
+          question: 'How do you measure campaign performance?',
+          answer: 'We track key metrics like click-through rate, cost per conversion, return on ad spend and engagement. You receive clear reports showing how your campaigns are performing.'
+        },
+        {
+          question: 'How soon can I expect results?',
+          answer: 'Most clients see results within a few days to a couple of weeks after the campaign launches. We continuously optimize to ensure the best performance.'
+        },
+        {
+          question: 'What makes you different from other agencies?',
+          answer: 'We combine creative content with precise targeting and ongoing optimization. You get a dedicated partner focused on your results and long-term growth.'
+        }
+      ]
+    },
+
       cta: {
         title: 'Ready to take your business to the next level?',
         description: 'Let us show you how we can help your business grow. Get a free consultation and see the possibilities.',

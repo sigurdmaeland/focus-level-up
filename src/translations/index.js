@@ -129,11 +129,12 @@ export const translations = {
         subtitle: 'Vi transformerer digitale drømmer til virkelighet gjennom strategisk markedsføring og kreativ utførelse.'
       },
       introduction: {
-        badge: 'EN LITEN',
-        title: 'Introduksjon',
-        text1: 'Velkommen til oss i Focus markedsbyrå! Vi er et dedikert team av innovatører som tror på kraften av teknologi for å transformere virksomheter. Vår lidenskap ligger i å levere skreddersydde løsninger som møter våre kunders unike behov og hjelper dem med å nå sine mål.',
-        text2: 'Med ekspertise innen digital markedsføring jobber vi sammen med våre klienter for å skape effektive løsninger som gir en klar avkastning.'
-      },
+      badge: 'EN LITEN',
+      title: 'Introduksjon',
+      text1: 'Focus markedsbyrå ble etablert av Thomas med et ønske om å hjelpe bedrifter å vokse gjennom målrettet digital markedsføring. Med ekte engasjement og tro på verdien av gode relasjoner har han bygget et byrå som setter resultater og samarbeid i sentrum.',
+      text2: 'Vi hjelper bedrifter med annonsering på Meta, TikTok og Snapchat, og utvikler strategier som skaper synlighet, engasjement og vekst. Hos oss får du personlig oppfølging, tydelige mål og kampanjer som faktisk leverer.'
+    },
+
       stats: {
         projects: 'Prosjekter',
         experience: 'Års erfaring',
@@ -494,7 +495,7 @@ export const translations = {
           company: 'General Manager, Bergs Bygg'
         }
       },
-      
+
       faq: {
       badge: 'FAQ',
       title: 'Frequently Asked Questions',
@@ -549,12 +550,14 @@ export const translations = {
         title: 'Learn a bit about us',
         subtitle: 'We transform digital dreams into reality through strategic marketing and creative execution.'
       },
+      
       introduction: {
-        badge: 'A SMALL',
-        title: 'Introduction',
-        text1: 'Welcome to Focus marketing agency! We are a dedicated team of innovators who believe in the power of technology to transform businesses. Our passion lies in delivering tailored solutions that meet our clients\' unique needs and help them achieve their goals.',
-        text2: 'With expertise in digital marketing, we work together with our clients to create effective solutions that provide clear returns.'
-      },
+      badge: 'A SHORT',
+      title: 'Introduction',
+      text1: 'Focus Marketing Agency was established by Thomas with a passion for helping businesses grow through targeted digital marketing. With genuine dedication and a strong belief in meaningful partnerships, he has built an agency that values results and collaboration above all.',
+      text2: 'We help businesses advertise on Meta, TikTok and Snapchat, creating strategies that drive visibility, engagement and growth. With us, you get personal support, clear goals and campaigns that truly deliver.'
+    },
+
       stats: {
         projects: 'Projects',
         experience: 'Years experience',

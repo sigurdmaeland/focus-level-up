@@ -356,7 +356,7 @@ export default function TikTokAds() {
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
               <a
-                href="/kontakt"
+                href="/contact"
                 className="cta-button"
                 style={{
                   display: 'inline-block',

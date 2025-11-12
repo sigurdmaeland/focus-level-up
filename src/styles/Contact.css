@@ -43,7 +43,7 @@
 .contact-info-compact {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 25px;
   flex-wrap: wrap;
 }
@@ -51,7 +51,7 @@
 .contact-item-compact {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 8px;
   color: #cccccc;
   font-size: 0.95rem;
   backdrop-filter: blur(10px);

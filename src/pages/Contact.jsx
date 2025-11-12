@@ -158,8 +158,8 @@ if (!digitsOnly) {
             </div>
 
             <div className="contact-info-compact">
-              <span className="contact-item-compact"><FaEnvelope /> contact@focusmarketingagency.no</span>
               <span className="contact-item-compact"><FaPhone /> +47 97405764</span>
+              <span className="contact-item-compact"><FaEnvelope /> contact@focusmarketingagency.no</span>
               <span className="contact-item-compact">
                 <FaInstagram />
                 <a

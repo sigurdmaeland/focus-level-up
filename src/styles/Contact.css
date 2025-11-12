@@ -51,7 +51,7 @@
 .contact-item-compact {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
   color: #cccccc;
   font-size: 0.95rem;
   backdrop-filter: blur(10px);

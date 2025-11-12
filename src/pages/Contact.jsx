@@ -161,15 +161,16 @@ if (!digitsOnly) {
               <span className="contact-item-compact"><FaEnvelope /> contact@focusmarketingagency.no</span>
               <span className="contact-item-compact"><FaPhone /> +47 97405764</span>
               <span className="contact-item-compact">
-                  <FaInstagram /> 
-                  <a 
-                    href="https://www.instagram.com/focus.level.up" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                  >
-                    @focus.level.up
-                  </a>
-                </span>
+                <FaInstagram />
+                <a
+                  href="https://www.instagram.com/focus.level.up"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: 'inherit', textDecoration: 'none' }}
+                >
+                  @focus.level.up
+                </a>
+              </span>
             </div>
 
             <div className="contact-form-wrapper">

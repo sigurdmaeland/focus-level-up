@@ -116,7 +116,7 @@ export default function Home() {
                   <FaUsers />
                 </div>
                 <div className="stat-info">
-                  <span className="stat-number">50+</span>
+                  <span className="stat-number">10+</span>
                   <span className="stat-label">{t('home.stats.customers')}</span>
                 </div>
               </div>

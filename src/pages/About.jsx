@@ -47,7 +47,7 @@ export default function About() {
         <div className="about-container">
           <div className="stats-grid">
             <div className="stat-item">
-              <h3>100+</h3>
+              <h3>10+</h3>
               <p>{t('about.stats.projects')}</p>
             </div>
             <div className="stat-item">

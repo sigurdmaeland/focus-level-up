@@ -131,7 +131,7 @@ export const translations = {
       introduction: {
       badge: 'EN LITEN',
       title: 'Introduksjon',
-      text1: 'Focus markedsbyrå ble etablert av Thomas med et ønske om å hjelpe bedrifter å vokse gjennom målrettet digital markedsføring. Med ekte engasjement og tro på verdien av gode relasjoner har han bygget et byrå som setter resultater og samarbeid i sentrum.',
+      text1: 'Focus markedsbyrå ble etablert av Thomas Skipnes med et ønske om å hjelpe bedrifter å vokse gjennom målrettet digital markedsføring. Med ekte engasjement og tro på verdien av gode relasjoner har han bygget et byrå som setter resultater og samarbeid i sentrum.',
       text2: 'Vi hjelper bedrifter med annonsering på Meta, TikTok og Snapchat, og utvikler strategier som skaper synlighet, engasjement og vekst. Hos oss får du personlig oppfølging, tydelige mål og kampanjer som faktisk leverer.'
     },
 
@@ -554,7 +554,7 @@ export const translations = {
       introduction: {
       badge: 'A SHORT',
       title: 'Introduction',
-      text1: 'Focus Marketing Agency was established by Thomas with a passion for helping businesses grow through targeted digital marketing. With genuine dedication and a strong belief in meaningful partnerships, he has built an agency that values results and collaboration above all.',
+      text1: 'Focus Marketing Agency was established by Thomas Skipnes with a passion for helping businesses grow through targeted digital marketing. With genuine dedication and a strong belief in meaningful partnerships, he has built an agency that values results and collaboration above all.',
       text2: 'We help businesses advertise on Meta, TikTok and Snapchat, creating strategies that drive visibility, engagement and growth. With us, you get personal support, clear goals and campaigns that truly deliver.'
     },
 

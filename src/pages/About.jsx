@@ -34,7 +34,7 @@ export default function About() {
 
       {/* Bildedel */}
       <div className="intro-image">
-        <img src="/thomas.png" alt="Thomas" loading="lazy" />
+        <img src="/thomasskipnes.png" alt="Thomas Skipnes" loading="lazy" />
       </div>
 
     </div>
